@@ -17,7 +17,9 @@
     </div>
     <div class="section">
         <div class="section-title">Demo</div>
-        <div class="section-content">This is the section content area</div>
+        <div class="section-content">
+            <div id="quiz_demo"></div>
+        </div>
     </div>
     <div class="section">
         <div class="section-title">Who is using it?</div>
@@ -73,6 +75,10 @@
     </div>
 </div>
 </div>
+<script type="text/javascript" src="//pym.nprapps.org/pym.v1.min.js"></script>
+<script>
+var pymParent = new pym.Parent('quiz_demo', 'https://storage.googleapis.com/g2gcs-hosting-quizjs-v2-148d020fd5/index.html?sheet=https://docs.google.com/spreadsheets/d/1XHWYwmqTWkEGri001nzMMpx96Vegzwb7J6hQrC5XKZY/pubhtml', {});
+</script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script src="bootstrap/js/bootstrap.min.js"></script>
 </body>
