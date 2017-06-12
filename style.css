@@ -1,5 +1,58 @@
 @import url('https://fonts.googleapis.com/css?family=Droid+Serif:400,400i,700,700i');
 
+body{
+    background: #fafafa;
+    font-size: 16px;
+    font-family: helvetica;
+}
+
+.container{
+    max-width: 980px;
+    /*background: red;*/
+}
+
+.article-container{
+    max-width: 640px;
+}
+
+.page-title{
+    font-size: 48px;
+    font-family: 'Droid Serif', serif;
+    font-weight: bold;
+}
+
+.section-title{
+    font-size: 24px;
+    font-family: 'Droid Serif', serif;
+    font-weight: bold;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.section-content{
+
+}
+
+.card{
+    background: white;
+    box-shadow: 0px 3px 6px lightgrey;
+    display: inline-block;
+}
+
+.example-card{
+    width: 250px;
+    height: 350px;
+    float: left;
+    margin-right: 15px;
+}
+
+.card-title{
+    padding: 5px 15px;
+}
+
+.logo_img{
+    padding: 0px 15px;
+}
 
 
 
