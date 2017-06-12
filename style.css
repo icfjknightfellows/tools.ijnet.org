@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css?family=Droid+Serif:400,400i,700,700i');
+
+body{
+    /*background: #fafafa;*/
+    font-size: 16px;
+    font-family: helvetica;
+}
+
+.container{
+    max-width: 980px;
+    /*background: red;*/
+}
+
+.article-container{
+    max-width: 640px;
+}
+
+.section-title{
+    font-size: 34px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    font-family: 'Droid Serif', serif;
+    margin-top: 30px;
+}
+
+.sub-title{
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Droid Serif', serif;
+    margin-bottom: 10px;
+}
+
+.card{
+    padding: 15px;
+    /*background: white;*/
+    border-radius: 2px;
+}
+.image-area{
+    background: #fafafa;
+    text-align: center;
+    padding: 5px;
+}
+
+.card:hover{
+    background: white;
+    box-shadow: 0px 3px 15px #c7c7c7;
+    transition: 0.2s ease-in;
+}
+
+.divider{
+    margin: 30px 0px;
+    padding: 0px 15px;
+}
+
+.divider-name{
+    display: inline-block;
+    text-transform: uppercase;
+    background: #fafafa;
+    padding-right: 15px;
+}
+
+.divider-line{
+    border-bottom: 1px solid lightgrey;
+    /*display: inline-block;*/
+    margin-top: -10px;
+}
+
+img{
+    /*border: 1px solid #fafafa;*/
+}
+
+
+
+
+
