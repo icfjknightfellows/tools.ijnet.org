@@ -37,21 +37,26 @@ body{
     background: white;
     box-shadow: 0px 3px 6px lightgrey;
     display: inline-block;
+    border-radius: 2px;
+    overflow: hidden;
 }
 
 .example-card{
     width: 200px;
-    height: 350px;
+    height: 300px;
     float: left;
     margin-right: 15px;
 }
 
 .card-title{
-    padding: 5px 15px;
+    padding: 5px 10px;
+    font-size: 14px;
+    font-family: 'Droid Serif', serif;
 }
 
 .logo_img{
-    padding: 0px 15px;
+    padding: 0px 10px;
+    margin: 10px 0px;
 }
 
 .category{
@@ -69,7 +74,6 @@ body{
 
 .profile{
     margin-top: 15px;
-
 }
 
 .profile-details{
@@ -88,6 +92,25 @@ body{
     display: inline-block;
     float: left;
     margin-right: 10px;
+}
+
+.visit-link{
+    padding: 5px 10px;
+    font-size: 12px;
+    color: #ddd;
+    font-weight: 100;
+    text-align: center;
+    margin-top: 15px;
+}
+
+.example-card:hover{
+    box-shadow: 0px 3px 15px #9a9a9a;
+    transition: 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+.example-card:hover .visit-link{
+    color: #1e88e5;
 }
 
 
