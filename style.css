@@ -76,6 +76,11 @@ body{
     margin-top: 15px;
 }
 
+.profile a{
+    color: #1e88e5;
+    text-decoration: none;
+}
+
 .profile-details{
     display: inline-block;
 }
@@ -111,6 +116,26 @@ body{
 
 .example-card:hover .visit-link{
     color: #1e88e5;
+}
+
+.nav-tabs>li>a{
+    font-size: 12px;
+    text-decoration: none;
+    color: #333;
+    border: none;
+}
+
+.nav-tabs>li>a:hover{
+    background: none;
+    border: none;
+    border-bottom: 2px solid #333;
+}
+
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover{
+    background: none;
+    border:0px;
+    border-bottom: 2px solid #333;
+    /*font-weight: bold;*/
 }
 
 
