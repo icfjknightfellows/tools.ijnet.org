@@ -4,6 +4,7 @@ body{
     background: #fafafa;
     font-size: 16px;
     font-family: helvetica;
+    padding-bottom: 200px;
 }
 
 .container{
@@ -16,7 +17,7 @@ body{
 }
 
 .page-title{
-    font-size: 48px;
+    font-size: 56px;
     font-family: 'Droid Serif', serif;
     font-weight: bold;
 }
@@ -136,6 +137,13 @@ body{
     border:0px;
     border-bottom: 2px solid #333;
     /*font-weight: bold;*/
+}
+
+.page-banner{
+    background: #efefef;
+    padding-left: 50px;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
 

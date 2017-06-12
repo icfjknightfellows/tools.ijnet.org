@@ -20,4 +20,6 @@ ul.navbar-nav, .navbar-nav li a {
 }
 .container-navbar {
     background: url("https://ijnet.org/sites/all/themes/ijnet/images/bg_main_menu.png") repeat 0 0;
+    margin-bottom: 0px;
+    border-radius: 0px;
 }
