@@ -119,6 +119,10 @@ body{
     color: #1e88e5;
 }
 
+.nav-tabs{
+    margin-bottom: 15px;
+}
+
 .nav-tabs>li>a{
     font-size: 12px;
     text-decoration: none;
@@ -145,6 +149,5 @@ body{
     padding-top: 50px;
     padding-bottom: 50px;
 }
-
 
 
