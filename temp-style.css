@@ -23,4 +23,6 @@ ul.navbar-nav, .navbar-nav li a {
 }
 .container-header img {
     height: 70px;
+    margin-bottom: 0px;
+    border-radius: 0px;
 }
