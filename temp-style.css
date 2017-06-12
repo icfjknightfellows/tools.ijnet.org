@@ -1,86 +1,23 @@
-#leaderboard-wrapper {
+.main-navbar {
     background: #5b5836;
     border-bottom: 1px solid #3b3923;
 }
-#leaderboard-wrapper .block {
-    margin-bottom: 0px;
+.navbar-header {
+    padding: 10px 0px;
 }
-.block-top-header-menu {
-    float: left;
-    margin-left: 23px;
-    background: url("https://ijnet.org/sites/all/themes/ijnet/images/logo_topbar.png") no-repeat left center;
+.container-fluid {
+    max-width: 990px;
+    margin: 0 auto;
 }
-#main-content, .block-inner {
-    margin-left: 20px;
-    margin-right: 20px;
-}
-.block-top-header-menu .block-content {
-    padding: 10px 0 8px 24px;
-}
-.content {
-    color: black;
-}
-.block-top-header-menu .block-content ul.menu {
-    margin: 0px;
-    padding: 0px;
-}
-ul.menu {
-    border: none;
-    list-style: none;
-    text-align: left;
-}
-.block-top-header-menu .block-content ul.menu li {
-    float: left;
-    border-right: 1px solid #7b7749;
-}
-ul.menu li {
-    margin: 0;
-}
-li {
-    display: list-item;
-    text-align: -webkit-match-parent;
-}
-.block-top-header-menu .block-content ul.menu li a {
-    color: white;
+ul.navbar-nav, .navbar-nav li a {
+    color: white !important;
     font-size: 14px;
     margin: 0 10px;
     text-transform: uppercase;
 }
-a {
-    text-decoration: none;
-    -webkit-transition: color 0.2s ease-in-out;
-    -moz-transition: color 0.2s ease-in-out;
-    -ms-transition: color 0.2s ease-in-out;
-    -o-transition: color 0.2s ease-in-out;
-    transition: color 0.2s ease-in-out;
-    color: #137a9a;
+#logo {
+    padding: 68px 0px 21px 3px;
 }
-a:-webkit-any-link {
-    color: -webkit-link;
-    cursor: auto;
-    text-decoration: underline;
-}
-@media only screen and (min-width: 990px) {
-	.container {
-	    width: 100%;
-	    max-width: 990px;
-	}
-}
-.clearfix {
-    zoom: 1;
-}
-.container {
-    margin: 0 auto;
-}
-.clearfix:after {
-    content: ".";
-    display: block;
-    height: 0;
-    clear: both;
-    visibility: hidden;
-}
-.clearfix:after {
-    content: "";
-    display: table;
-    clear: both;
+.container-navbar {
+    background: url("https://ijnet.org/sites/all/themes/ijnet/images/bg_main_menu.png") repeat 0 0;
 }
