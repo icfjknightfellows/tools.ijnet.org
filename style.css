@@ -40,7 +40,7 @@ body{
 }
 
 .example-card{
-    width: 250px;
+    width: 200px;
     height: 350px;
     float: left;
     margin-right: 15px;
@@ -54,6 +54,17 @@ body{
     padding: 0px 15px;
 }
 
+.category{
+    display: inline-block;
+    float: left;
+    widows: 200px;
+    padding: 0px;
+}
+.category-title{
+    text-transform: uppercase;
+    font-size: 12px;
+    color: #999;
+}
 
 
 
