@@ -150,4 +150,17 @@ body{
     padding-bottom: 50px;
 }
 
+.step-details{
+    height: 80px;
+}
+
+.step-img{
+    border: 1px solid #efefef;
+}
+
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover{
+    background: transparent;
+    border-bottom: 3px solid #DEB408;
+}
+
 
