@@ -31,26 +31,17 @@
         </ul>
     </div>
 </nav>
-<div id="side_list" class="side-list">
-    <ul class="list-unstyled">
-        <li>
-            <a href="#introduction" title=""> Introduction </a>
-        </li>
-        <li>
-            <a href="#demo" title=""> Demo </a>
-        </li>
-        <li>
-            <a href="#who-is-using-it" title=""> Who is using it? </a>
-        </li>
-        <li>
-            <a href="#how-to-use-it" title=""> How to use it? </a>
-        </li>
-        <li>
-            <a href="#contributors" title=""> Contributors </a>
-        </li>
-    </ul>
-</div>
 <div class="container">
+    <div id="side_list" class="side-list">
+        <ul class="list-unstyled content-list">
+            <li class="section-title">CONTENT</li>
+            <li class="content-list-li active-content"><a href="#introduction" title=""> Introduction </a></li>
+            <li class="content-list-li"><a href="#demo" title=""> Demo </a></li>
+            <li class="content-list-li"><a href="#who-is-using-it" title=""> Who is using it? </a></li>
+            <li class="content-list-li"><a href="#how-to-use-it" title=""> How to use it? </a></li>
+            <li class="content-list-li"><a href="#contributors" title=""> Contributors </a></li>
+        </ul>
+    </div>
     <div class="container-header">
         <div id="logo">
             <a class="active">
@@ -216,6 +207,20 @@
                 <p>2. Replace the Google Spreadsheet link with your Google Spreadsheet link (published using the steps mentioned above).</p>
                 <p>3. Paste the resultant code into the code of your website where you want the Quiz to appear.</p>
                 <p>4. Hurray! Your Quiz is now a part of your website.</p>
+                <div class="clearfix"></div><br>
+                <div class="text_area">
+                    <textarea id="embed" readonly="readonly" style="width: 100%; background: #F0F7FA ; height: 200px; font-size: 15px;">
+                    &lt;div id="quiz_js"&gt;&lt;/div&gt;
+                    &lt;script type="text/javascript" src="http://pym.nprapps.org/pym.v1.min.js"&gt;&lt;/script&gt;
+                    &lt;script type="text/javascript"&gt;
+                        var metaTag=document.createElement('meta');
+                        metaTag.name = "viewport";
+                        metaTag.content = "width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no";
+                        document.getElementsByTagName('head')[0].appendChild(metaTag);
+                        var pymParent = new pym.Parent ( 'quiz_js', 'https://storage.googleapis.com/g2gcs-hosting-quizjs-v2-148d020fd5/index.html?sheet=https://docs.google.com/spreadsheets/d/1XHWYwmqTWkEGri001nzMMpx96Vegzwb7J6hQrC5XKZY/pubhtml', {});
+                    &lt;/script&gt;
+                   </textarea>
+                </div>
                 <div class="clearfix"></div>
                 <div class="next-step">
                     <div class="call-to-action-text">Next Step</div>
@@ -273,8 +278,8 @@ var pymParent = new pym.Parent('quiz_demo', 'https://storage.googleapis.com/g2gc
 <script type="text/javascript">
     var $root = $('html, body');
     $('.side-list a').click(function() {
-        $('.side-list li.active').removeClass("active");
-        $(this).closest("li").addClass("active");
+        $('.side-list li.active-content').removeClass("active-content");
+        $(this).closest("li").addClass("active-content");
         var href = $.attr(this, 'href');
         $root.animate({
             scrollTop: $(href).offset().top

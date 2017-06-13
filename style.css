@@ -278,3 +278,37 @@ a, a:hover{
     display: none;
 }
 
+#how-to-use-it .dark-patch{
+    height: 604px !important;
+}
+
+.content-list{
+    display: inline-block;
+    position: fixed;
+    text-align: right;
+    margin-left: -620px;
+    top:40%;
+}
+
+.content-list li a{
+    color: #999;
+    font-weight: 100;
+    font-size: 14px;
+}
+
+.content-list-li{
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-right: 5px;
+    margin-bottom: 3px;
+    border-right: 3px solid white;
+}
+
+.active-content a{
+    color: #333 !important;
+    font-weight: 400 !important;
+}
+
+.active-content{
+    border-right: 3px solid #333;
+}
