@@ -282,6 +282,7 @@ a, a:hover{
 
 #how-to-use-it .dark-patch{
     height: 604px !important;
+    overflow-y: auto;
 }
 
 .content-list{
