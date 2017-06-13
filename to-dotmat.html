@@ -31,26 +31,17 @@
         </ul>
     </div>
 </nav>
-<div id="side_list" class="side-list">
-    <ul class="list-unstyled">
-        <li>
-            <a href="#introduction" title=""> Introduction </a>
-        </li>
-        <li>
-            <a href="#demo" title=""> Demo </a>
-        </li>
-        <li>
-            <a href="#who-is-using-it" title=""> Who is using it? </a>
-        </li>
-        <li>
-            <a href="#how-to-use-it" title=""> How to use it? </a>
-        </li>
-        <li>
-            <a href="#contributors" title=""> Contributors </a>
-        </li>
-    </ul>
-</div>
 <div class="container">
+    <div id="side_list" class="side-list">
+        <ul class="list-unstyled content-list">
+            <li class="section-title">CONTENT</li>
+            <li class="content-list-li active-content"><a href="#introduction" title=""> Introduction </a></li>
+            <li class="content-list-li"><a href="#demo" title=""> Demo </a></li>
+            <li class="content-list-li"><a href="#who-is-using-it" title=""> Who is using it? </a></li>
+            <li class="content-list-li"><a href="#how-to-use-it" title=""> How to use it? </a></li>
+            <li class="content-list-li"><a href="#contributors" title=""> Contributors </a></li>
+        </ul>
+    </div>
     <div class="container-header">
         <div id="logo">
             <a class="active">
@@ -96,37 +87,38 @@
     <div id="who-is-using-it">
         <div class="article-container">
             <div class="section-title">Who is using it?</div>
-            <div class="gallary-view">
+            <div class="gallary-view dotmat-gallary">
                 <a href="http://www.indiaspend.com/cover-story/5-days-to-polls-more-support-for-bjp-but-40-of-uttar-pradesh-voters-undecided-24496" target="blank">
                     <div class="to-card">
-                        <img src="src/img/dotmat/example.png" width="100%">
+                        <img src="src/img/dotmat/example1.png" width="100%">
                         <div class="to-card-content">
                             <div class="to-card-caption">
                                 <p>40% Uttar Pradesh Voters Undecided</p>
                             </div>
-                            <img src="src/img/dotmat/indiaspend.png" class="logo_img" width="60%">
+                            <img src="src/img/dotmat/indiaspend.png" class="logo_img" width="60%" height="30px">
                         </div>
                     </div>
                 </a>
                 <a href="http://datanewsroom.com/indianpakistaniprisoners/" target="blank">
                     <div class="to-card">
-                        <img src="src/img/dotmat/example-2.png" width="100%">
+                        <img src="src/img/dotmat/example2.png" width="100%">
                         <div class="to-card-content">
                             <div class="to-card-caption">
                                 <p>Pakistani Prisoners in Indian Jails</p>
                             </div>
-                            <img src="src/img/dotmat/datanewsroom.png" class="logo_img" width="60%">
+                            <img src="src/img/dotmat/datanewsroom.png" class="logo_img" height="30px">
                         </div>
                     </div>
                 </a>
                 <a href="http://freepresskashmir.com/the-invisible-battle/index.html" target="blank">
                     <div class="to-card">
-                        <img src="src/img/dotmat/example-3.jpg" width="100%">
+                        <img src="src/img/dotmat/example3.png" width="100%" height="">
                         <div class="to-card-content">
                             <div class="to-card-caption">
                                 <p>The Invisible Battle</p>
+                                <br>
                             </div>
-                            <img src="src/img/dotmat/freepress.png" class="logo_img" width="60%">
+                            <img src="src/img/dotmat/freepress.png" class="logo_img" width="60%" height="30px">
                         </div>
                     </div>
                 </a>
@@ -324,8 +316,8 @@
 <script type="text/javascript">
     var $root = $('html, body');
     $('.side-list a').click(function() {
-        $('.side-list li.active').removeClass("active");
-        $(this).closest("li").addClass("active");
+        $('.side-list li.active-content').removeClass("active-content");
+        $(this).closest("li").addClass("active-content");
         var href = $.attr(this, 'href');
         $root.animate({
             scrollTop: $(href).offset().top
