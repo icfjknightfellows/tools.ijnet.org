@@ -278,8 +278,8 @@ var pymParent = new pym.Parent('quiz_demo', 'https://storage.googleapis.com/g2gc
 <script type="text/javascript">
     var $root = $('html, body');
     $('.side-list a').click(function() {
-        $('.side-list li.active').removeClass("active");
-        $(this).closest("li").addClass("active");
+        $('.side-list li.active-content').removeClass("active-content");
+        $(this).closest("li").addClass("active-content");
         var href = $.attr(this, 'href');
         $root.animate({
             scrollTop: $(href).offset().top

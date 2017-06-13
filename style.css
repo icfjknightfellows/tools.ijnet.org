@@ -301,6 +301,7 @@ a, a:hover{
     padding-bottom: 3px;
     padding-right: 5px;
     margin-bottom: 3px;
+    border-right: 3px solid white;
 }
 
 .active-content a{
