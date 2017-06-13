@@ -303,6 +303,16 @@ var pymParent = new pym.Parent('quiz_demo', 'https://storage.googleapis.com/g2gc
         });
         return false;
     });
+    $(".step-number").click(function() {
+        let step_numer = this.textContent;
+        for(let i = 1; i <= 4; i++) {
+            if(i == step_numer) {
+                $("#setup-step-" + i).show();
+            } else {
+                $("#setup-step-" + i).hide();
+            }
+        }
+    });
 </script>
 </body>
 </html>
