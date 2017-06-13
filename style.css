@@ -274,3 +274,7 @@ a, a:hover{
 }
 
 
+#setup-step-2,#setup-step-3,#setup-step-4{
+    display: none;
+}
+
