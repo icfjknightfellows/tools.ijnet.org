@@ -174,16 +174,18 @@ a, a:hover{
     float: left;
 }
 
-.next-step{
+.next-step, .prev-step{
     background: #333;
     padding: 10px 15px;
     border-radius: 2px;
     display: inline-block;
     margin-top: 10px;
     margin-bottom: 15px;
+    float: left;
+    margin-right: 10px;
 }
 
-.next-step .call-to-action-text{
+.next-step .call-to-action-text, .prev-step .call-to-action-text{
     color: white;
     font-size: 12px;
     font-family: helvetica, arial;
