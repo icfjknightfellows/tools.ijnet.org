@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Droid+Serif:400,400i,700,700i');
 
 body{
-    background: #fafafa;
     font-size: 16px;
     font-family: helvetica;
     padding-bottom: 200px;
@@ -9,56 +8,217 @@ body{
 
 .container{
     max-width: 980px;
-    /*background: red;*/
+    text-align: center;
+    padding: 0px;
 }
 
 .article-container{
     max-width: 640px;
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/*=========page-header=========*/
+.page-header{
+    text-align: center;
+    border:0px;
+    margin-bottom: 50px;
 }
 
 .page-title{
-    font-size: 56px;
-    font-family: 'Droid Serif', serif;
-    font-weight: bold;
+    font-size: 72px;
+    font-family: times, serif;
 }
+
+.small-divider{
+    width: 20px;
+    border-bottom: 1px solid #bbb;
+    margin-bottom: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.one-liner{
+    color: #999;
+    font-family: helvetica, arial;
+    font-weight: 100;
+}
+
+/*=========section area==========*/
 
 .section-title{
-    font-size: 24px;
+    font-size: 12px;
+    font-family: helvetica, arial;
+    font-weight: 100;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #999;
+    margin-bottom: 15px;
+}
+
+p{
+    font-size: 18px !important;
+    line-height: 32px;
+    color: #333;
     font-family: 'Droid Serif', serif;
-    font-weight: bold;
-    margin-top: 30px;
-    margin-bottom: 10px;
+    font-weight: lighter;
 }
 
-.section-content{
-
+.section-spacing{
+    margin-top: 25px;
+    margin-bottom: 25px;
 }
 
-.card{
+.dark-patch{
+    background: #fafafa;
+    min-height: 300px;
+}
+
+/*=============cards==========*/
+
+.to-card{
     background: white;
-    box-shadow: 0px 3px 6px lightgrey;
     display: inline-block;
     border-radius: 2px;
     overflow: hidden;
-}
-
-.example-card{
-    width: 200px;
-    height: 300px;
-    float: left;
+    border: 1px solid #efefef;
     margin-right: 15px;
+    width: 240px;
 }
 
-.card-title{
-    padding: 5px 10px;
-    font-size: 14px;
-    font-family: 'Droid Serif', serif;
+.to-card:hover{
+    box-shadow: 0px 3px 15px lightgrey;
+    transition: 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+.to-card-content{
+    padding: 10px 15px;
+}
+
+.date-line{
+    font-size: 12px;
+    font-family: helvetica, arial;
+    font-weight: 100;
+    text-transform: uppercase;
+    color: #999;
+    margin-bottom: 15px;
+    margin-top: 10px;
+}
+
+.to-card-caption p{
+    font-size: 16px !important;
+    line-height: 24px;
 }
 
 .logo_img{
     padding: 0px 10px;
     margin: 10px 0px;
 }
+
+a, a:hover{
+    text-decoration: none;
+}
+
+
+/*===============steps===========*/
+
+
+.steps-area{
+    margin-bottom: 10px;
+}
+
+.step-number{
+    color: #ccc;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    padding-top: 4px;
+    height: 32px;
+    width:32px;
+    text-align: center;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.active-step{
+    color: #333;
+    border: 2px solid #333;
+}
+
+.step-title{
+    display: inline-block;
+    margin-right: 50px;
+}
+
+.steps-text-area{
+    width: 60%;
+    display: inline-block;
+    float: left;
+    padding-right: 15px;
+}
+
+.steps-text-area p{
+    font-size: 16px !important;
+    line-height: 24px;
+}
+
+.steps-text-area ul li p{
+    font-size: 14px !important;
+}
+
+.steps-image-area{
+    width: 40%;
+    display: inline-block;
+    float: left;
+}
+
+.next-step{
+    background: #333;
+    padding: 10px 15px;
+    border-radius: 2px;
+    display: inline-block;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+.next-step .call-to-action-text{
+    color: white;
+    font-size: 12px;
+    font-family: helvetica, arial;
+    font-weight: 100;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+
+/*========category=======*/
+.profile-details a{
+    font-size: 16px !important;
+    color: #333 !important;
+    font-family: 'Droid Serif', serif !important;
+    font-weight: lighter;
+}
+
+.profile-details a:hover{
+    text-decoration: underline;
+}
+
+.profile-details .to-card-caption p{
+    margin-bottom: 0px !important;
+}
+
+#contributors .to-card{
+    float: left;
+}
+
+#contributors .to-card-caption{
+    border-top: 1px solid #efefef;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
 
 .category{
     display: inline-block;
@@ -98,56 +258,6 @@ body{
     display: inline-block;
     float: left;
     margin-right: 10px;
-}
-
-.visit-link{
-    padding: 5px 10px;
-    font-size: 12px;
-    color: #ddd;
-    font-weight: 100;
-    text-align: center;
-    margin-top: 15px;
-}
-
-.example-card:hover{
-    box-shadow: 0px 3px 15px #9a9a9a;
-    transition: 0.2s ease-in-out;
-    cursor: pointer;
-}
-
-.example-card:hover .visit-link{
-    color: #1e88e5;
-}
-
-.nav-tabs{
-    margin-bottom: 15px;
-}
-
-.nav-tabs>li>a{
-    font-size: 12px;
-    text-decoration: none;
-    color: #333;
-    border: none;
-}
-
-.nav-tabs>li>a:hover{
-    background: none;
-    border: none;
-    border-bottom: 2px solid #333;
-}
-
-.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover{
-    background: none;
-    border:0px;
-    border-bottom: 2px solid #333;
-    /*font-weight: bold;*/
-}
-
-.page-banner{
-    background: #efefef;
-    padding-left: 50px;
-    padding-top: 50px;
-    padding-bottom: 50px;
 }
 
 .step-details{

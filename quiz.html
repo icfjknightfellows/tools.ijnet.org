@@ -51,137 +51,129 @@
             </ul>
         </div>
     </nav>
-    <div class="page-banner">
+    <div class="page-header">
         <div class="page-title">toQuiz</div>
+        <div class="small-divider"></div>
         <div class="one-liner">Easy-to-make, quiz stories.</div>
     </div>
-    <div class="article-container">
-        <div class="section">
+
+    <div id="introduction">
+        <div class="article-container">
             <div class="section-title">Introduction</div>
-            <div class="section-content">A quiz is a simple and fun story telling format that journalists can use to educate readers on critical information. A well-framed quiz can drive engagement because it challenges the reader's knowledge on a topic. Beginners can create a quiz using nothing more than a Google spreadsheet. The experience of the quiz is similar to that with Flash cards.</div>
+            <p>A quiz is a simple and fun story telling format that journalists can use to educate readers on critical information. A well-framed quiz can drive engagement because it challenges the reader's knowledge on a topic. Beginners can create a quiz using nothing more than a Google spreadsheet. The experience of the quiz is similar to that with Flash cards.</p>
         </div>
-        <br><br>
-        <div class="section">
-            <div class="section-title">Demo</div>
-            <div class="section-content">
-                <div id="quiz_demo"></div>
-            </div>
+    </div>
+    <div class="clearfix section-spacing"></div>
+    <div id="demo">
+        <div class="article-container">
+        <div class="section-title">Demo</div>
         </div>
-    <div class="clearfix"></div>
-    <br><br>
-    <div class="section">
-        <div class="section-title">Who is using it?</div>
-        <div class="section-content">
-            <div class="card example-card">
-                <img src="src/img/jagran.png" width="100%">
-                <img src="src/img/jagran_logo.png" class="logo_img" width="80%">
-                <div class="card-title">How well do you really know what happens when you visit a doctor?</div>
-                <div class="visit-link">Visit site</div>
-            </div>
-            <div class="card example-card">
-                <img src="src/img/datanewsroom.jpg" width="100%">
-                <img src="src/img/datanewsroom_logo.png" class="logo_img" width="80%">
-                <div class="card-title">How well do you know Sachin Tendulkar? Take this quiz to find out</div>
-                <div class="visit-link">Visit site</div>
+        <div class="container dark-patch">
+            <div id="quiz_demo"></div>
+        </div>
+    </div>
+    <div class="clearfix section-spacing"></div>
+    <div id="who-is-using-it">
+        <div class="article-container">
+            <div class="section-title">Who is using it?</div>
+            <div class="gallary-view">
+                <a href="http://www.onlymyhealth.com/what-happens-when-you-go-to-the-doctor-in-hindi-1491482545" target="blank">
+                    <div class="to-card">
+                        <img src="src/img/jagran.png" width="100%">
+                        <div class="to-card-content">
+                            <div class="date-line">Apr 6, 2017</div>
+                            <div class="to-card-caption">
+                                <p>How well do you really know what happens when you visit a doctor?</p>
+                            </div>
+                            <img src="src/img/jagran_logo.png" class="logo_img" width="60%">
+                        </div>
+                    </div>
+                </a>
+                <a href="http://datanewsroom.com/sachintendulkar/" target="blank">
+                    <div class="to-card">
+                        <img src="src/img/datanewsroom.png" width="100%">
+                        <div class="to-card-content">
+                            <div class="date-line">Apr 24, 2017</div>
+                            <div class="to-card-caption">
+                                <p>How well do you know Sachin Tendulkar? Take this quiz to find out.</p>
+                            </div>
+                            <img src="src/img/datanewsroom_logo.png" class="logo_img" width="60%">
+                        </div>
+                    </div>
+                </a>
             </div>
         </div>
     </div>
-    <div class="clearfix"></div>
-    <br><br>
-    <div class="section">
-        <div class="section-title">How to use it?</div>
-        <div class="section-content">
-            <div>
-              <!-- Nav tabs -->
-              <ul class="nav nav-tabs" role="tablist">
-                <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Create Your Spreadsheet</a></li>
-                <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Publish Spreadsheet</a></li>
-                <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">CMS integration</a></li>
-                <li role="presentation"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">Embed Iframe</a></li>
-              </ul>
-
-              <!-- Tab panes -->
-              <div class="tab-content">
-                <div role="tabpanel" class="tab-pane active" id="home">
-                    <div class="col-sm-12">
-                        Build a new Google Spreadsheet by referring this template. Click on the "Make a copy" button to add a copy of the template to your Google Drive. The template has 3 sheets - quiz, header and config.
-                        <br>
-                        <br>
-                        Note:
-                        <ul>
-                            <li>Do not change the name of the sheets - quiz, header and config.</li>
-                            <li>Do not change the column headers in the first row of all the sheets.</li>
-                            <li>Only columns "gif_image", "answer_description" and "fact" are optional. All other fields are compulsory.</li>
-                            <li>Only columns "gif_image", "answer_description” and "fact" are optional. All other fields are compulsory.
-                        Languages supported: "english" and "hindi"</li>
-                        </ul>
-                        <img src="src/img/step1.png" class="step-img" width="50%">
-                    </div>
+    <div class="clearfix section-spacing"></div>
+    <div id="how-to-use-it">
+        <div class="article-container">
+            <div class="section-title">How to use it</div>
+        </div>
+        <div class="container dark-patch">
+            <br>
+            <div class="article-container" id="setup-step-1">
+                <div class="steps-area">
+                    <div class="active-step step-number">1</div>
+                    <div class="step-title"><p>Creat Spreadsheet</p></div>
+                    <div class="step-number">2</div>
+                    <div class="step-number">3</div>
+                    <div class="step-number">4</div>
                 </div>
-                <div role="tabpanel" class="tab-pane" id="profile">
-                    <div class="col-sm-4">
-                        <div class="step-details">Under the "File" menu, select the option “Publish to the web…”.</div>
-                        <img src="src/img/step3.png" class="step-img" width="100%">
-                    </div>
-                    <div class="col-sm-4">
-                        <div class="step-details">Click on "Publish" button without changing the default options.</div>
-                        <img src="src/img/step4.png" class="step-img" width="100%">
-                    </div>
-                    <div class="col-sm-4">
-                        <div class="step-details">Copy the public link.</div>
-                        <img src="src/img/step5.png" class="step-img" width="100%">
-                    </div>
-                </div>
-                <div role="tabpanel" class="tab-pane" id="messages">
-                    <strong>WordPress.org:</strong> Add these plugins to allow embedding - https://wordpress.org/plugins/scripts-n-styles and https://wordpress.org/plugins/iframe
-                    <br><br>
-                    <strong>WordPress.com:</strong> Emdedding the visual on wordpress.com is not possible because it does not allow addition of iframe tags or script tags according to it's security policies.
-                    <br><br>
-                    <strong>Blogger:</strong> Full support. You can simply paste the embed code in the html section and publish it.
-                    <br><br>
-                    <strong>Medium:</strong> Not supported
-                </div>
-                <div role="tabpanel" class="tab-pane" id="settings">
+                <div class="steps-text-area">
+                    <p>Build a new Google Spreadsheet by referring this template. Click on the "Make a copy" button to add a copy of the template to your Google Drive. The template has 3 sheets - quiz, header and config.</p>
+                    <p>Note</p>
                     <ul>
-                        <li>Copy the code below into a text editor.</li>
-                        <li>Replace the Google Spreadsheet link with your Google Spreadsheet link (published using the steps mentioned above).</li>
-                        <li>Paste the resultant code into the code of your website where you want the Quiz to appear.</li>
-                        <li>Hurray! Your Quiz is now a part of your website.</li>
+                        <li><p>Do not change the name of the sheets - quiz, header and config</p></li>
+                        <li><p>Do not change the column headers in the first row of all the sheets.</p></li>
+                        <li><p>Only columns "gif_image", "answer_description" and "fact" are optional. All other fields are compulsory.</p></li>
+                        <li><p>Only columns "gif_image", "answer_description” and "fact" are optional. All other fields are compulsory.
+                    Languages supported: "english" and "hindi"</p></li>
                     </ul>
                 </div>
-              </div>
+                <div class="steps-image-area">
+                <img src="src/img/step1.png" class="step-img" width="100%">
+                </div>
+                <div class="clearfix"></div>
+                <div class="next-step">
+                    <div class="call-to-action-text">Next Step</div>
+                </div>
             </div>
         </div>
     </div>
-    <div class="clearfix"></div>
-    <br><br>
-    <div class="section">
-        <div class="section-title">Contributors</div>
-        <div class="section-content">
-            <div class="category col-sm-4">
-                <div class="category-title">Designed & Developed by</div>
-                <div class="profile">
-                    <div class="profile-img"><img src="src/img/pykih_logo.png" width="100%"></div>
-                    <div class="profile-details">
-                        <div class="name"><a href="https://pykih.com/" target="blank">Pykih</a></div>
-                        <div class="detail">Development agency.</div>
+    <div class="clearfix section-spacing"></div>
+    <div id="contributors">
+        <div class="article-container">
+            <div class="section-title">Contributors</div>
+            <div class="gallary-view">
+                <div class="to-card">
+                    <div class="to-card-content">
+                        <div class="date-line">Designed & developed by</div>
+                        <div class="to-card-caption">
+                            <div class="profile-img"><img src="src/img/pykih_logo.png" width="100%"></div>
+                            <div class="profile-details">
+                                <div class="name"><a href="https://pykih.com/" target="blank">Pykih</a></div>
+                                <div class="detail">Development agency.</div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="category col-sm-4">
-                <div class="category-title">Conceptualised by</div>
-                <div class="profile">
-                    <div class="profile-img"><img src="src/img/hrvenkatesh.jpg" width="100%"></div>
-                    <div class="profile-details">
-                        <div class="name"><a href="https://twitter.com/hrvenkatesh" target="blank">HR Venkatesh</a></div>
-                        <div class="detail">ICFJ Knight Fellow.</div>
-                    </div>
-                </div>
-                <div class="profile">
-                    <div class="profile-img"><img src="src/img/ravibajpai.jpg" width="100%"></div>
-                    <div class="profile-details">
-                        <div class="name"><a href="https://twitter.com/bajpairavi" target="blank">Ravi Bajpai</a></div>
-                        <div class="detail">ICFJ Knight Fellow.</div>
+                <div class="to-card">
+                    <div class="to-card-content">
+                        <div class="date-line">Conceptualised by</div>
+                        <div class="to-card-caption">
+                            <div class="profile-img"><img src="src/img/hrvenkatesh.jpg" width="100%"></div>
+                            <div class="profile-details">
+                                <div class="name"><a href="https://twitter.com/hrvenkatesh" target="blank">HR Venkatesh</a></div>
+                                <div class="detail">ICFJ Knight Fellow.</div>
+                            </div>
+                        </div>
+                        <div class="to-card-caption">
+                            <div class="profile-img"><img src="src/img/ravibajpai.jpg" width="100%"></div>
+                            <div class="profile-details">
+                                <div class="name"><a href="https://twitter.com/bajpairavi" target="blank">Ravi Bajpai</a></div>
+                                <div class="detail">ICFJ Knight Fellow.</div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
