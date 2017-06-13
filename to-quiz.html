@@ -31,6 +31,25 @@
         </ul>
     </div>
 </nav>
+<div id="side_list" class="side-list">
+    <ul class="list-unstyled">
+        <li>
+            <a href="#introduction" title=""> Introduction </a>
+        </li>
+        <li>
+            <a href="#demo" title=""> Demo </a>
+        </li>
+        <li>
+            <a href="#who-is-using-it" title=""> Who is using it? </a>
+        </li>
+        <li>
+            <a href="#how-to-use-it" title=""> How to use it? </a>
+        </li>
+        <li>
+            <a href="#contributors" title=""> Contributors </a>
+        </li>
+    </ul>
+</div>
 <div class="container">
     <div class="container-header">
         <div id="logo">
@@ -251,5 +270,29 @@ var pymParent = new pym.Parent('quiz_demo', 'https://storage.googleapis.com/g2gc
 </script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script src="bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript">
+    var $root = $('html, body');
+    $('.side-list a').click(function() {
+        $('.side-list li.active').removeClass("active");
+        $(this).closest("li").addClass("active");
+        var href = $.attr(this, 'href');
+        $root.animate({
+            scrollTop: $(href).offset().top
+        }, 500, function () {
+            window.location.hash = href;
+        });
+        return false;
+    });
+    $(".step-number").click(function() {
+        let step_numer = this.textContent;
+        for(let i = 1; i <= 4; i++) {
+            if(i == step_numer) {
+                $("#setup-step-" + i).show();
+            } else {
+                $("#setup-step-" + i).hide();
+            }
+        }
+    });
+</script>
 </body>
 </html>
