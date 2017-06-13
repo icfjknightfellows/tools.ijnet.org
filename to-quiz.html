@@ -144,7 +144,7 @@
                 <img src="src/img/step1.png" class="step-img" width="100%">
                 </div>
                 <div class="clearfix"></div>
-                <div class="next-step">
+                <div class="next-step" data-step="1">
                     <div class="call-to-action-text">Next Step</div>
                 </div>
             </div>
@@ -166,7 +166,10 @@
                 <div class="steps-text-area"><p>3. Copy the public link.</p></div>
                 <div class="steps-image-area"><img src="src/img/step5.png" class="step-img" width="100%"></div>
                 <div class="clearfix"></div>
-                <div class="next-step">
+                <div class="prev-step" data-step="2">
+                    <div class="call-to-action-text">Prev Step</div>
+                </div>
+                <div class="next-step" data-step="2">
                     <div class="call-to-action-text">Next Step</div>
                 </div>
             </div>
@@ -190,7 +193,10 @@
                 <p>
                 <strong>Medium:</strong> Not supported</p>
                 <div class="clearfix"></div>
-                <div class="next-step">
+                <div class="prev-step" data-step="3">
+                    <div class="call-to-action-text">Prev Step</div>
+                </div>
+                <div class="next-step" data-step="3">
                     <div class="call-to-action-text">Next Step</div>
                 </div>
             </div>
@@ -222,8 +228,8 @@
                    </textarea>
                 </div>
                 <div class="clearfix"></div>
-                <div class="next-step">
-                    <div class="call-to-action-text">Next Step</div>
+                <div class="prev-step" data-step="4">
+                    <div class="call-to-action-text">Prev Step</div>
                 </div>
             </div>
 
@@ -297,6 +303,16 @@ var pymParent = new pym.Parent('quiz_demo', 'https://storage.googleapis.com/g2gc
                 $("#setup-step-" + i).hide();
             }
         }
+    });
+    $(".next-step").click(function() {
+        let step_numer = parseInt(this.getAttribute("data-step"));
+        $("#setup-step-" + step_numer).hide();
+        $("#setup-step-" + (step_numer + 1)).show();
+    });
+    $(".prev-step").click(function() {
+        let step_numer = parseInt(this.getAttribute("data-step"));
+        $("#setup-step-" + step_numer).hide();
+        $("#setup-step-" + (step_numer - 1)).show();
     });
 </script>
 </body>
