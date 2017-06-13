@@ -239,10 +239,30 @@
                     <div class="active-step step-number">4</div>
                     <div class="step-title"><p>Embed</p></div>
                 </div>
-                <p>1. Copy the code below into a text editor.</p>
-                <p>2. Replace the Google Spreadsheet link with your Google Spreadsheet link (published using the steps mentioned above).</p>
-                <p>3. Paste the resultant code into the code of your website where you want the Dotmat to appear.</p>
-                <p>4. Hurray! Your Dotmat is now a part of your website.</p>
+                <p>Copy the code from below into a Text Editor and replace the Google Sheet URL in the text with your Google Sheet URL. Paste the embed code in your site where you want your visual to appear.</p>
+                <textarea id='embed' readonly='readonly' style="width: 100%; background: #F0F7FA ; height: 200px; font-size: 15px;">
+                    <div id="dotmat"></div>
+                    <script type="text/javascript" src="//pym.nprapps.org/pym.v1.min.js"></script>
+                    <script>
+                        var metaTag=document.createElement('meta');
+                        metaTag.name = "viewport";
+                        metaTag.content = "width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no";
+                        document.getElementsByTagName('head')[0].appendChild(metaTag);
+                        var pymParent = new pym.Parent ( 'dotmat', 'https://storage.googleapis.com/g2gcs-hosting-dotmat-8ddb06e014/index.html?sheet=https://docs.google.com/spreadsheets/d/1H28b3a-XhZH8Vjac6pJ9WM95yCBAdpVTCqN80KWpFZE/pubhtml', {});
+                    </script>
+                </textarea>
+                <p>The embed code for video narrative is different from other modes. Replace the Google Sheet URL in the code below and the copy paste the embed code in your site where you want your visual to appear</p>
+                <textarea id='embed' readonly='readonly' style="width: 100%; background: #F0F7FA ; height: 200px; font-size: 15px;">
+                    <div id="dotmat-video"></div>
+                    <script type="text/javascript" src="//pym.nprapps.org/pym.v1.min.js"></script>
+                    <script>
+                        var metaTag=document.createElement('meta');
+                        metaTag.name = "viewport";
+                        metaTag.content = "width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no";
+                        document.getElementsByTagName('head')[0].appendChild(metaTag);
+                        var pymParent = new pym.Parent ( 'dotmat-video', 'https://storage.googleapis.com/g2gcs-hosting-dotmat-v2-a76c37349b/index.html?sheet=https://docs.google.com/spreadsheets/d/1H28b3a-XhZH8Vjac6pJ9WM95yCBAdpVTCqN80KWpFZE/pubhtml', {});
+                    </script>
+                </textarea>
                 <div class="clearfix"></div>
                 <div class="prev-step" data-step="4">
                     <div class="call-to-action-text">Prev Step</div>
