@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>toDotmat</title>
+    <meta charset='utf-8'/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="temp-style.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="shortcut icon" href="https://ijnet.org/sites/all/themes/ijnet/favicon.ico" type="image/vnd.microsoft.icon">
+</head>
+<body>
+<nav class="navbar navbar-default main-navbar">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <img src="https://ijnet.org/sites/all/themes/ijnet/images/logo_topbar.png">
+        </div>
+        <ul class="nav navbar-nav">
+            <li>
+                <a href="http://www.icfj.org" title="" target="_blank"> ICFJ.org </a>
+            </li>
+            <li>
+                <a href="http://www.ijnet.org" title=""> IJNET.org </a>
+            </li>
+            <li>
+                <a href="http://icfjanywhere.org" title="" target="_blank"> ICFJAnywhere.org </a>
+            </li>
+            <li>
+                <a href="http://www.icfj.org/awards-dinner" title="" targe="_blank" target="_blank">ICFJ AWARDS DINNER </a>
+            </li>
+        </ul>
+    </div>
+</nav>
+<div id="side_list" class="side-list">
+    <ul class="list-unstyled">
+        <li>
+            <a href="#introduction" title=""> Introduction </a>
+        </li>
+        <li>
+            <a href="#demo" title=""> Demo </a>
+        </li>
+        <li>
+            <a href="#who-is-using-it" title=""> Who is using it? </a>
+        </li>
+        <li>
+            <a href="#how-to-use-it" title=""> How to use it? </a>
+        </li>
+        <li>
+            <a href="#contributors" title=""> Contributors </a>
+        </li>
+    </ul>
+</div>
+<div class="container">
+    <div class="container-header">
+        <div id="logo">
+            <a class="active">
+                <img class="site-logo" typeof="foaf:Image" src="https://ijnet.org/sites/all/themes/ijnet/logo.png" alt="IJNet">
+            </a>
+        </div>
+    </div>
+    <nav class="navbar navbar-default container-navbar">
+        <div class="container-fluid">
+            <ul class="nav navbar-nav">
+                <li><a href="#">News & Resources</a></li>
+                <li class="active"><a href="#">Tools</a></li>
+                <li><a href="#">Opportunities</a></li>
+                <li><a href="#">Video</a></li>
+                <li><a href="#">Chats</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="page-header">
+        <div class="page-title">toDotmat</div>
+        <div class="small-divider"></div>
+        <div class="one-liner">Showcase breakdowns, while maintaining individuality of events.</div>
+    </div>
+
+    <div id="introduction">
+        <div class="article-container">
+            <div class="section-title">Introduction</div>
+            <p>The DotMat is a free-to-use, hosted, mobile responsive visual with built in ability for story telling. Much like the humble pie chart, DotMat communicates part-of-whole relationships. However, unlike the pie chart, DotMat retains the individuality of the entities e.g. people, companies, etc. in each slice. The inspiration for the DotMat came from FiveThirtyEight.com’s visual on gun deaths.</p>
+            <p>In July 2016, FiveThirtyEight.com used a very simple yet effective visual to talk about gun deaths in America. The visual answers the question - How many people from various subsections of society killed by gun violence? This insight could have been communicated by aggregate charts like Bar Charts, Trellis or Pie Charts. However, use of aggregate visuals would have hidden away the fact that each death is a human life lost. Instead FiveThirtyEight used dots to represent each person killed. This is what makes this visualisation special.</p>
+        </div>
+    </div>
+    <div class="clearfix section-spacing"></div>
+    <div id="demo">
+        <div class="article-container">
+        <div class="section-title">Demo</div>
+        </div>
+        <div class="container dark-patch">
+            <div id="dotmat_demo"></div>
+        </div>
+    </div>
+    <div class="clearfix section-spacing"></div>
+    <div id="who-is-using-it">
+        <div class="article-container">
+            <div class="section-title">Who is using it?</div>
+            <div class="gallary-view">
+                <a href="http://www.indiaspend.com/cover-story/5-days-to-polls-more-support-for-bjp-but-40-of-uttar-pradesh-voters-undecided-24496" target="blank">
+                    <div class="to-card">
+                        <img src="src/img/dotmat/example.png" width="100%">
+                        <div class="to-card-content">
+                            <div class="date-line">Apr 6, 2017</div>
+                            <div class="to-card-caption">
+                                <p>40% Uttar Pradesh Voters Undecided</p>
+                            </div>
+                            <img src="src/img/dotmat/indiaspend.png" class="logo_img" width="60%">
+                        </div>
+                    </div>
+                </a>
+                <a href="http://datanewsroom.com/indianpakistaniprisoners/" target="blank">
+                    <div class="to-card">
+                        <img src="src/img/dotmat/example-2.png" width="100%">
+                        <div class="to-card-content">
+                            <div class="date-line">Apr 24, 2017</div>
+                            <div class="to-card-caption">
+                                <p>Pakistani Prisoners in Indian Jails</p>
+                            </div>
+                            <img src="src/img/dotmat/datanewsroom.png" class="logo_img" width="60%">
+                        </div>
+                    </div>
+                </a>
+                <a href="http://freepresskashmir.com/the-invisible-battle/index.html" target="blank">
+                    <div class="to-card">
+                        <img src="src/img/dotmat/example-3.jpg" width="100%">
+                        <div class="to-card-content">
+                            <div class="date-line">Apr 24, 2017</div>
+                            <div class="to-card-caption">
+                                <p>The Invisible Battle</p>
+                            </div>
+                            <img src="src/img/dotmat/freepress.png" class="logo_img" width="60%">
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="clearfix section-spacing"></div>
+    <div id="how-to-use-it">
+        <div class="article-container">
+            <div class="section-title">How to use it</div>
+        </div>
+        <div class="container dark-patch">
+            <br>
+            <div class="article-container" id="setup-step-1">
+                <div class="steps-area">
+                    <div class="active-step step-number">1</div>
+                    <div class="step-title"><p>Creat Spreadsheet</p></div>
+                    <div class="step-number">2</div>
+                    <div class="step-number">3</div>
+                    <div class="step-number">4</div>
+                </div>
+                <div class="steps-text-area">
+                    <p>Build a new Google Spreadsheet by referring this <a href='https://docs.google.com/spreadsheets/d/1H28b3a-XhZH8Vjac6pJ9WM95yCBAdpVTCqN80KWpFZE/copy' target='blank'>template</a>. Click on the "Make a copy" button to add a copy of the template to your Google Drive. The template has 4 sheets - config, narrative, filters and data. For more details, refer <a href='https://github.com/pykih/dotmat/wiki/Configuration-Parameters' target='blank'>technical documentation.</a></p>
+                    <p>
+                      <ul>
+                        <li>If you intend to publish a narrative-only story, then only include config and narrative sheets. (<a href='https://docs.google.com/spreadsheets/d/1OuYZ2YEez6vA24kvePzZA97Q8uWSa29hVs0Efi8ji-s/copy' target='blank'>template</a>)</li>
+                        <li>If you intend to publish an exploratory-only story, then only include config, filters and data sheets. (<a href='https://docs.google.com/spreadsheets/d/13NBIEAbrKzK7PDe84MEVnVL3gYzREpHQKzJzA08k114/copy' target='blank'>template</a>)</li>
+                        <li>If you intend to publish video narrative, then add "mode" as video in narrative sheet. (<a href='https://docs.google.com/spreadsheets/d/1rp70DAaBm2BMbgt_-uKacgNjCW71s7XOUSRjKvN4IIM/copy' target='blank'>template</a>)</li>
+                        <li>If you intend to publish a story in Hindi language, then change the text to Hindi. Numbers remain as it is.(<a href='https://docs.google.com/spreadsheets/d/1bG8VpRfJMFylyBgce1l8o9Pz-_RYU6cBJFMPJCbksU4/copy' target='blank'>template</a>) </li>
+                        <li>If you intend to publish both narrative and exploratory mode, then include all 4 sheets.</li>
+                      </ul>
+                    </p>
+                    <p>Note</p>
+                    <ul>
+                        <li><p>Do not change the sheet names. They should still read - data, config, filters and narrative.</p></li>
+                        <li><p>Do not change the column headers (first row) in the config, narrative and filters sheet. You can add your own columns in the data sheet.</p></li>
+                        <li><p>Do not leave any blank rows in your spreadsheet.</p></li>
+                    </ul>
+                    <p>Read more on what type of data to enter in the "data" sheet <a href='https://github.com/pykih/dotmat/wiki/What-kind-of-data-to-enter-in-%22data%22-sheet%3F' target='blank'>here</a>.</p>
+                </div>
+                <div class="steps-image-area">
+                <img src="src/img/step1.png" class="step-img" width="100%">
+                </div>
+                <div class="clearfix"></div>
+                <div class="next-step" data-step="1">
+                    <div class="call-to-action-text">Next Step</div>
+                </div>
+            </div>
+
+            <div class="article-container" id="setup-step-2">
+                <div class="steps-area">
+                    <div class="step-number">1</div>
+                    <div class="active-step step-number">2</div>
+                    <div class="step-title"><p>Publish To Web</p></div>
+                    <div class="step-number">3</div>
+                    <div class="step-number">4</div>
+                </div>
+                <div class="steps-text-area"><p>1. Under the "File" menu, select the option “Publish to the web…”.</p></div>
+                <div class="steps-image-area"><img src="src/img/step3.png" class="step-img" width="100%"></div>
+                <div class="clearfix"></div><br>
+                <div class="steps-text-area"><p>2. Click on "Publish" button without changing the default options.</p></div>
+                <div class="steps-image-area"><img src="src/img/step4.png" class="step-img" width="100%"></div>
+                <div class="clearfix"></div><br>
+                <div class="steps-text-area"><p>3. Copy the public link.</p></div>
+                <div class="steps-image-area"><img src="src/img/step5.png" class="step-img" width="100%"></div>
+                <div class="clearfix"></div>
+                <div class="prev-step" data-step="2">
+                    <div class="call-to-action-text">Prev Step</div>
+                </div>
+                <div class="next-step" data-step="2">
+                    <div class="call-to-action-text">Next Step</div>
+                </div>
+            </div>
+
+            <div class="article-container" id="setup-step-3">
+                <div class="steps-area">
+                    <div class="step-number">1</div>
+                    <div class="step-number">2</div>
+                    <div class="active-step step-number">3</div>
+                    <div class="step-title"><p>CMS Integration</p></div>
+                    <div class="step-number">4</div>
+                </div>
+                <p><strong>WordPress.org:</strong> Add these plugins to allow embedding - https://wordpress.org/plugins/scripts-n-styles and https://wordpress.org/plugins/iframe</p>
+                <br>
+                <p>
+                <strong>WordPress.com:</strong> Emdedding the visual on wordpress.com is not possible because it does not allow addition of iframe tags or script tags according to it's security policies.</p>
+                <br>
+                <p>
+                <strong>Blogger:</strong> Full support. You can simply paste the embed code in the html section and publish it.</p>
+                <br>
+                <p>
+                <strong>Medium:</strong> Not supported</p>
+                <div class="clearfix"></div>
+                <div class="prev-step" data-step="3">
+                    <div class="call-to-action-text">Prev Step</div>
+                </div>
+                <div class="next-step" data-step="3">
+                    <div class="call-to-action-text">Next Step</div>
+                </div>
+            </div>
+
+            <div class="article-container" id="setup-step-4">
+                <div class="steps-area">
+                    <div class="step-number">1</div>
+                    <div class="step-number">2</div>
+                    <div class="step-number">3</div>
+                    <div class="active-step step-number">4</div>
+                    <div class="step-title"><p>Embed</p></div>
+                </div>
+                <p>1. Copy the code below into a text editor.</p>
+                <p>2. Replace the Google Spreadsheet link with your Google Spreadsheet link (published using the steps mentioned above).</p>
+                <p>3. Paste the resultant code into the code of your website where you want the Dotmat to appear.</p>
+                <p>4. Hurray! Your Dotmat is now a part of your website.</p>
+                <div class="clearfix"></div>
+                <div class="prev-step" data-step="4">
+                    <div class="call-to-action-text">Prev Step</div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="clearfix section-spacing"></div>
+    <div id="contributors">
+        <div class="article-container">
+            <div class="section-title">Contributors</div>
+            <div class="gallary-view">
+                <div class="to-card">
+                    <div class="to-card-content">
+                        <div class="date-line">Designed & developed by</div>
+                        <div class="to-card-caption">
+                            <div class="profile-img"><img src="src/img/pykih_logo.png" width="100%"></div>
+                            <div class="profile-details">
+                                <div class="name"><a href="https://pykih.com/" target="blank">Pykih</a></div>
+                                <div class="detail">Development agency.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="to-card">
+                    <div class="to-card-content">
+                        <div class="date-line">Conceptualised by</div>
+                        <div class="to-card-caption">
+                            <div class="profile-img"><img src="src/img/hrvenkatesh.jpg" width="100%"></div>
+                            <div class="profile-details">
+                                <div class="name"><a href="https://twitter.com/hrvenkatesh" target="blank">HR Venkatesh</a></div>
+                                <div class="detail">ICFJ Knight Fellow.</div>
+                            </div>
+                        </div>
+                        <div class="to-card-caption">
+                            <div class="profile-img"><img src="src/img/ravibajpai.jpg" width="100%"></div>
+                            <div class="profile-details">
+                                <div class="name"><a href="https://twitter.com/bajpairavi" target="blank">Ravi Bajpai</a></div>
+                                <div class="detail">ICFJ Knight Fellow.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript" src="//pym.nprapps.org/pym.v1.min.js"></script>
+<script>
+    var pymParent = new pym.Parent('dotmat_demo', 'https://storage.googleapis.com/g2gcs-hosting-dotmat-8ddb06e014/index.html?sheet=https://docs.google.com/spreadsheets/d/1H28b3a-XhZH8Vjac6pJ9WM95yCBAdpVTCqN80KWpFZE/pubhtml', {})
+</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript">
+    var $root = $('html, body');
+    $('.side-list a').click(function() {
+        $('.side-list li.active').removeClass("active");
+        $(this).closest("li").addClass("active");
+        var href = $.attr(this, 'href');
+        $root.animate({
+            scrollTop: $(href).offset().top
+        }, 500, function () {
+            window.location.hash = href;
+        });
+        return false;
+    });
+    $(".step-number").click(function() {
+        let step_numer = this.textContent;
+        for(let i = 1; i <= 4; i++) {
+            if(i == step_numer) {
+                $("#setup-step-" + i).show();
+            } else {
+                $("#setup-step-" + i).hide();
+            }
+        }
+    });
+    $(".next-step").click(function() {
+        let step_numer = parseInt(this.getAttribute("data-step"));
+        $("#setup-step-" + step_numer).hide();
+        $("#setup-step-" + (step_numer + 1)).show();
+    });
+    $(".prev-step").click(function() {
+        let step_numer = parseInt(this.getAttribute("data-step"));
+        $("#setup-step-" + step_numer).hide();
+        $("#setup-step-" + (step_numer - 1)).show();
+    });
+</script>
+</body>
+</html>
