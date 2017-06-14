@@ -89,6 +89,11 @@ p{
     float: left;
 }
 
+#contributors .to-card{
+    width: 203px;
+    margin-right: 10px;
+}
+
 .to-card:hover{
     box-shadow: 0px 3px 15px lightgrey;
     transition: 0.2s ease-in-out;
