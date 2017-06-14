@@ -125,6 +125,7 @@
                     </div>
                 </a>
             </div>
+            <div class="clearfix"></div>
         </div>
     </div>
     <div class="clearfix section-spacing"></div>
@@ -297,14 +298,17 @@ var pymParent = new pym.Parent('quiz_demo', 'https://storage.googleapis.com/g2gc
 <script src="bootstrap/js/bootstrap.min.js"></script>
 <script type="text/javascript">
     var $root = $('html, body');
-    $('.side-list a').click(function() {
+    $('.side-list a').click(function(e) {
+        e.preventDefault();
+        $(document).off("scroll");
         $('.side-list li.active-content').removeClass("active-content");
         $(this).closest("li").addClass("active-content");
         var href = $.attr(this, 'href');
         $root.animate({
-            scrollTop: $(href).offset().top
+            scrollTop: $(href).offset().top - 100
         }, 500, function () {
             window.location.hash = href;
+            $(document).on("scroll", onScroll);
         });
         return false;
     });
@@ -328,6 +332,21 @@ var pymParent = new pym.Parent('quiz_demo', 'https://storage.googleapis.com/g2gc
         $("#setup-step-" + step_numer).hide();
         $("#setup-step-" + (step_numer - 1)).show();
     });
+    $(document).on("scroll", onScroll);
+    function onScroll(event){
+        let scroll_position = $(document).scrollTop();
+        $('#side_list a').each(function () {
+            let current_link = $(this),
+                current_href = current_link.attr("href"),
+                current_section = $(current_href),
+                current_section_top = current_section.position().top;
+            if (current_section_top <= (scroll_position  + 100) && (current_section_top + current_section.height() + 50) > (scroll_position + 100)) {
+                $('#side_list li.active-content').removeClass("active-content");
+                current_link.closest("li").addClass("active-content");
+                history.pushState(null, null, current_href);
+            }
+        });
+    }
 </script>
 </body>
 </html>
