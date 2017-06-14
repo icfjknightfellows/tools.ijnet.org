@@ -106,33 +106,35 @@
     <div id="who-is-using-it">
         <div class="article-container">
             <div class="section-title">Who is using it?</div>
-            <div class="gallary-view">
-                <a href="http://www.onlymyhealth.com/what-happens-when-you-go-to-the-doctor-in-hindi-1491482545" target="blank">
-                    <div class="to-card">
-                        <img src="src/img/jagran.png" width="100%">
-                        <div class="to-card-content">
-                            <div class="date-line">Apr 6, 2017</div>
-                            <div class="to-card-caption">
-                                <p>How well do you really know what happens when you visit a doctor?</p>
+            <div class="gallery-container">
+                <div class="gallary-view">
+                    <a href="http://www.onlymyhealth.com/what-happens-when-you-go-to-the-doctor-in-hindi-1491482545" target="blank">
+                        <div class="to-card">
+                            <img src="src/img/jagran.png" width="100%">
+                            <div class="to-card-content">
+                                <div class="date-line">Apr 6, 2017</div>
+                                <div class="to-card-caption">
+                                    <p>How well do you really know what happens when you visit a doctor?</p>
+                                </div>
+                                <img src="src/img/jagran_logo.png" class="logo_img" width="60%">
                             </div>
-                            <img src="src/img/jagran_logo.png" class="logo_img" width="60%">
                         </div>
-                    </div>
-                </a>
-                <a href="http://datanewsroom.com/sachintendulkar/" target="blank">
-                    <div class="to-card">
-                        <img src="src/img/datanewsroom.png" width="100%">
-                        <div class="to-card-content">
-                            <div class="date-line">Apr 24, 2017</div>
-                            <div class="to-card-caption">
-                                <p>How well do you know Sachin Tendulkar? Take this quiz to find out.</p>
+                    </a>
+                    <a href="http://datanewsroom.com/sachintendulkar/" target="blank">
+                        <div class="to-card">
+                            <img src="src/img/datanewsroom.png" width="100%">
+                            <div class="to-card-content">
+                                <div class="date-line">Apr 24, 2017</div>
+                                <div class="to-card-caption">
+                                    <p>How well do you know Sachin Tendulkar? Take this quiz to find out.</p>
+                                </div>
+                                <img src="src/img/datanewsroom_logo.png" class="logo_img" width="60%">
                             </div>
-                            <img src="src/img/datanewsroom_logo.png" class="logo_img" width="60%">
                         </div>
-                    </div>
-                </a>
+                    </a>
+                    <div class="clearfix"></div>
+                </div>
             </div>
-            <div class="clearfix"></div>
         </div>
     </div>
     <div class="clearfix section-spacing"></div>
@@ -304,7 +306,12 @@ var pymParent = new pym.Parent('quiz_demo', 'https://storage.googleapis.com/g2gc
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script src="bootstrap/js/bootstrap.min.js"></script>
 <script type="text/javascript">
-    var $root = $('html, body');
+    let gallery_width = 0;
+    $(".gallery-container .to-card").each(function() {
+        gallery_width += $(this).width() + 17;
+    });
+    $(".gallery-container .gallary-view").width(gallery_width);
+    let $root = $('html, body');
     $('.side-list a').click(function(e) {
         e.preventDefault();
         $(document).off("scroll");

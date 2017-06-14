@@ -105,43 +105,45 @@
     <div id="who-is-using-it">
         <div class="article-container">
             <div class="section-title">Who is using it?</div>
-            <div class="gallary-view dotmat-gallary">
-                <a href="http://www.indiaspend.com/cover-story/5-days-to-polls-more-support-for-bjp-but-40-of-uttar-pradesh-voters-undecided-24496" target="blank">
-                    <div class="to-card">
-                        <img src="src/img/dotmat/example1.png" width="100%">
-                        <div class="to-card-content">
-                            <div class="to-card-caption">
-                                <p>40% Uttar Pradesh Voters Undecided</p>
+            <div class="gallery-container">
+                <div class="gallary-view">
+                    <a href="http://www.indiaspend.com/cover-story/5-days-to-polls-more-support-for-bjp-but-40-of-uttar-pradesh-voters-undecided-24496" target="blank">
+                        <div class="to-card">
+                            <img src="src/img/dotmat/example1.png" width="100%">
+                            <div class="to-card-content">
+                                <div class="to-card-caption">
+                                    <p>40% Uttar Pradesh Voters Undecided</p>
+                                </div>
+                                <img src="src/img/dotmat/indiaspend.png" class="logo_img" width="60%" height="30px">
                             </div>
-                            <img src="src/img/dotmat/indiaspend.png" class="logo_img" width="60%" height="30px">
                         </div>
-                    </div>
-                </a>
-                <a href="http://datanewsroom.com/indianpakistaniprisoners/" target="blank">
-                    <div class="to-card">
-                        <img src="src/img/dotmat/example2.png" width="100%">
-                        <div class="to-card-content">
-                            <div class="to-card-caption">
-                                <p>Pakistani Prisoners in Indian Jails</p>
+                    </a>
+                    <a href="http://datanewsroom.com/indianpakistaniprisoners/" target="blank">
+                        <div class="to-card">
+                            <img src="src/img/dotmat/example2.png" width="100%">
+                            <div class="to-card-content">
+                                <div class="to-card-caption">
+                                    <p>Pakistani Prisoners in Indian Jails</p>
+                                </div>
+                                <img src="src/img/dotmat/datanewsroom.png" class="logo_img" height="30px">
                             </div>
-                            <img src="src/img/dotmat/datanewsroom.png" class="logo_img" height="30px">
                         </div>
-                    </div>
-                </a>
-                <a href="http://freepresskashmir.com/the-invisible-battle/index.html" target="blank">
-                    <div class="to-card">
-                        <img src="src/img/dotmat/example3.png" width="100%" height="">
-                        <div class="to-card-content">
-                            <div class="to-card-caption">
-                                <p>The Invisible Battle</p>
-                                <br>
+                    </a>
+                    <a href="http://freepresskashmir.com/the-invisible-battle/index.html" target="blank">
+                        <div class="to-card">
+                            <img src="src/img/dotmat/example3.png" width="100%" height="">
+                            <div class="to-card-content">
+                                <div class="to-card-caption">
+                                    <p>The Invisible Battle</p>
+                                    <br>
+                                </div>
+                                <img src="src/img/dotmat/freepress.png" class="logo_img" width="60%" height="30px">
                             </div>
-                            <img src="src/img/dotmat/freepress.png" class="logo_img" width="60%" height="30px">
                         </div>
-                    </div>
-                </a>
+                    </a>
+                    <div class="clearfix"></div>
+                </div>
             </div>
-            <div class="clearfix"></div>
         </div>
     </div>
     <div class="clearfix section-spacing"></div>
@@ -334,6 +336,11 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script src="bootstrap/js/bootstrap.min.js"></script>
 <script type="text/javascript">
+    let gallery_width = 0;
+    $(".gallery-container .to-card").each(function() {
+        gallery_width += $(this).width() + 17;
+    });
+    $(".gallery-container .gallary-view").width(gallery_width);
     var $root = $('html, body');
     $('.side-list a').click(function(e) {
         e.preventDefault();
