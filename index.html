@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ICFJ Tools</title>
+    <meta charset='utf-8'/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="temp-style.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="shortcut icon" href="https://ijnet.org/sites/all/themes/ijnet/favicon.ico" type="image/vnd.microsoft.icon">
+</head>
+<body>
+<nav class="navbar navbar-default main-navbar">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <img src="https://ijnet.org/sites/all/themes/ijnet/images/logo_topbar.png">
+        </div>
+        <ul class="nav navbar-nav top-navbar">
+            <li>
+                <a href="http://www.icfj.org" title="" target="_blank"> ICFJ.org </a>
+            </li>
+            <li>
+                <a href="http://www.ijnet.org" title=""> IJNET.org </a>
+            </li>
+            <li>
+                <a href="http://icfjanywhere.org" title="" target="_blank"> ICFJAnywhere.org </a>
+            </li>
+            <li>
+                <a href="http://www.icfj.org/awards-dinner" title="" targe="_blank" target="_blank">ICFJ AWARDS DINNER </a>
+            </li>
+        </ul>
+    </div>
+</nav>
+<div class="container">
+    <div class="container-header">
+        <div id="logo">
+            <a class="active">
+                <img class="site-logo" typeof="foaf:Image" src="https://ijnet.org/sites/all/themes/ijnet/logo.png" alt="IJNet">
+            </a>
+        </div>
+    </div>
+    <nav class="navbar navbar-default container-navbar">
+        <div class="container-fluid">
+            <div class="navbar-header second-navbar">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">MENU</a>
+            </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+              <ul class="nav navbar-nav">
+                <li><a href="https://ijnet.org/en/news" target="blank">News & Resources</a></li>
+                <li class="active"><a href="#">Tools</a></li>
+                <li><a href="https://ijnet.org/en/opportunities" target="blank">Opportunities</a></li>
+                <li><a href="https://ijnet.org/en/videos" target="blank">Video</a></li>
+                <li><a href="https://ijnet.org/en/chats" target="blank">Chats</a></li>
+                <li><a href="https://ijnet.org/en/about" target="blank">About</a></li>
+              </ul>
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+    </nav>
+    <div class="page-header">
+        <div class="page-title">Tools</div>
+        <div class="small-divider"></div>
+        <div class="one-liner">One liner comes here</div>
+    </div>
+    <div class="col-sm-4">
+        <a href=""></a>
+        <div class="tools-card">
+            <div class="tools-card-image"><img src="src/img/tools-quiz.png" width="100%"></div>
+            <div class="tools-card-title"><p>toQuiz</p></div>
+            <div class="subtext"><p>Easy-to-make, quiz stories.</p><br></div>
+            <div class="call-to-action-button">try now</div>
+        </div>
+    </div>
+    <div class="col-sm-4">
+        <a href=""></a>
+        <div class="tools-card">
+            <div class="tools-card-image"><img src="src/img/tools-dotmat.png" width="100%"></div>
+            <div class="tools-card-title"><p>toDotmat</p></div>
+            <div class="subtext"><p>Showcase breakdowns, while maintaining individuality of events.</p></div>
+            <div class="call-to-action-button">try now</div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript" src="//pym.nprapps.org/pym.v1.min.js"></script>
+<script>
+    var pymParent = new pym.Parent('dotmat_demo', 'https://storage.googleapis.com/g2gcs-hosting-dotmat-8ddb06e014/index.html?sheet=https://docs.google.com/spreadsheets/d/1H28b3a-XhZH8Vjac6pJ9WM95yCBAdpVTCqN80KWpFZE/pubhtml', {})
+</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript">
+    var $root = $('html, body');
+    $('.side-list a').click(function() {
+        $('.side-list li.active-content').removeClass("active-content");
+        $(this).closest("li").addClass("active-content");
+        var href = $.attr(this, 'href');
+        $root.animate({
+            scrollTop: $(href).offset().top
+        }, 500, function () {
+            window.location.hash = href;
+        });
+        return false;
+    });
+    $(".step-number").click(function() {
+        let step_numer = this.textContent;
+        for(let i = 1; i <= 4; i++) {
+            if(i == step_numer) {
+                $("#setup-step-" + i).show();
+            } else {
+                $("#setup-step-" + i).hide();
+            }
+        }
+    });
+    $(".next-step").click(function() {
+        let step_numer = parseInt(this.getAttribute("data-step"));
+        $("#setup-step-" + step_numer).hide();
+        $("#setup-step-" + (step_numer + 1)).show();
+    });
+    $(".prev-step").click(function() {
+        let step_numer = parseInt(this.getAttribute("data-step"));
+        $("#setup-step-" + step_numer).hide();
+        $("#setup-step-" + (step_numer - 1)).show();
+    });
+</script>
+</body>
+</html>

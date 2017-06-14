@@ -123,6 +123,39 @@ a, a:hover{
     text-decoration: none;
 }
 
+.wide-section{
+    text-align: center;
+}
+
+.tools-card-title p{
+    font-size: 22px !important;
+}
+
+.tools-card{
+    width: 100%;
+    background: white;
+    /*box-shadow: 0px 3px 6px lightgrey;*/
+    min-height: 200px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    display: inline-block;
+    margin-right: 20px;
+    text-align: left;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-bottom: 20px;
+    box-shadow: 0 20px 20px rgba(0,0,0,.08);
+    border:1px solid rgba(0,0,0,.08);
+    transition: all 250ms cubic-bezier(.02, .01, .47, 1);
+    cursor: pointer;
+}
+
+.tools-card:hover{
+    box-shadow: 0 40px 40px rgba(0,0,0,.16);
+    transform: translate(0,-20px);
+    transition-delay: 0s !important;
+}
+
 
 /*===============steps===========*/
 
@@ -169,6 +202,12 @@ a, a:hover{
     font-size: 14px !important;
 }
 
+.subtext p{
+    font-size: 14px !important;
+    line-height: 22px;
+    margin-bottom: 30px;
+}
+
 .steps-image-area{
     width: 40%;
     display: inline-block;
@@ -187,6 +226,23 @@ a, a:hover{
 }
 
 .next-step .call-to-action-text, .prev-step .call-to-action-text{
+    color: white;
+    font-size: 12px;
+    font-family: helvetica, arial;
+    font-weight: 100;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.call-to-action-button{
+    background: #333;
+    padding: 10px 15px;
+    border-radius: 2px;
+    display: inline-block;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    float: left;
+    margin-right: 10px;
     color: white;
     font-size: 12px;
     font-family: helvetica, arial;
@@ -328,6 +384,7 @@ a, a:hover{
 .navbar-default .navbar-toggle .icon-bar{
     background: white !important;
 }
+
 
 @media only screen
 and (min-device-width : 320px)
