@@ -85,7 +85,7 @@ p{
     overflow: hidden;
     border: 1px solid #efefef;
     margin-right: 15px;
-    width: 240px;
+    width: 204px;
     float: left;
 }
 
@@ -319,4 +319,64 @@ a, a:hover{
 
 .dotmat-gallary{
     width: 780px !important;
+}
+
+.second-navbar{
+    padding: 0px !important;
+}
+
+.navbar-default .navbar-brand{
+    color: white !important;
+    display: none !important;
+}
+.navbar-default .navbar-toggle .icon-bar{
+    background: white !important;
+}
+
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 736px) {
+
+    .container{
+        max-width: 100%;
+    }
+    .article-container{
+        max-width: 100%;
+        text-align: left;
+        padding: 0px 15px;
+    }
+    .step-number{
+        display: none;
+    }
+    .active-step{
+        display: inline-block;
+    }
+    .steps-image-area{
+        width: 100%;
+    }
+    .steps-text-area{
+        width: 100%;
+    }
+    #contributors .to-card{
+        width: 100%;
+        margin-bottom: 15px;
+    }
+    .top-navbar li{
+        display: none;
+    }
+    .main-navbar{
+        padding: 0px 15px;
+    }
+    .container-header img{
+        height: 100%;
+        width: 80%;
+        padding-left: 15px;
+    }
+    .navbar-default .navbar-brand{
+        display: inline-block !important;
+    }
+    .navbar-nav>li>a{
+        padding-top: 16px !important;
+        padding-bottom: 16px !important;
+    }
 }
