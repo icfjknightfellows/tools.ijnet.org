@@ -462,4 +462,7 @@ and (max-device-width : 736px) {
         padding-top: 16px !important;
         padding-bottom: 16px !important;
     }
+    .gallery-container {
+        overflow-x: auto;
+    }
 }

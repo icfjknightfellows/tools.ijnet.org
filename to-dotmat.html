@@ -356,7 +356,8 @@
         $root.animate({
             scrollTop: $(href).offset().top - 100
         }, 500, function () {
-            window.location.hash = href;
+            // window.location.hash = href;
+            history.pushState(null, null, href);
             $(document).on("scroll", onScroll);
         });
         return false;
