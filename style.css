@@ -146,8 +146,8 @@ a, a:hover{
     display: inline-block;
     margin-right: 20px;
     text-align: left;
-    padding-left: 25px;
-    padding-right: 25px;
+    /*padding-left: 25px;*/
+    /*padding-right: 25px;*/
     padding-bottom: 20px;
     box-shadow: 0 20px 20px rgba(0,0,0,.08);
     border:1px solid rgba(0,0,0,.08);
@@ -415,7 +415,22 @@ a, a:hover{
     color: white;
 }
 
+.tools-card-image{
+    height: 240px;
+    margin-bottom: 15px;
+    overflow: hidden;
+}
 
+.tools-card-title, .subtext, .call-to-action-button{
+    padding-left: 20px;
+    padding-right: 20px;
+
+}
+.subtext{
+      
+      text-overflow: ellipsis;   
+
+}
 @media only screen
 and (min-device-width : 320px)
 and (max-device-width : 736px) {
