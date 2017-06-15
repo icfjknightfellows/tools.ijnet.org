@@ -95,7 +95,23 @@
     <div class="clearfix section-spacing"></div>
     <div id="demo">
         <div class="article-container">
-        <div class="section-title">Demo</div>
+            <div class="section-title">Demo</div>
+        </div>
+        <div class="dotmat-types">
+            <ul class="nav nav-tabs">
+                <li data-type="n_and_e" class="active">Narrative & Exploratory</li>
+                <li data-type="n_only">Narrative only</li>
+                <li data-type="e_only">Exploratory only</li>
+                <li data-type="video_n">Video Narrative</li>
+                <li data-type="hindi_v">Hindi Version (Beta)</li>
+            </ul>
+            <select>
+                <option data-type="n_and_e" selected>Narrative & Exploratory</option>
+                <option data-type="n_only">Narrative only</option>
+                <option data-type="e_only">Exploratory only</option>
+                <option data-type="video_n">Video Narrative</option>
+                <option data-type="hindi_v">Hindi Version (Beta)</option>
+            </select>
         </div>
         <div class="container dark-patch">
             <div id="dotmat_demo"></div>
@@ -335,11 +351,45 @@
     </div>
 </div>
 <script type="text/javascript" src="//pym.nprapps.org/pym.v1.min.js"></script>
-<script>
-    var pymParent = new pym.Parent('dotmat_demo', 'https://storage.googleapis.com/g2gcs-hosting-dotmat-8ddb06e014/index.html?sheet=https://docs.google.com/spreadsheets/d/1H28b3a-XhZH8Vjac6pJ9WM95yCBAdpVTCqN80KWpFZE/pubhtml', {})
-</script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script src="bootstrap/js/bootstrap.min.js"></script>
+<script>
+    var pymParent = new pym.Parent('dotmat_demo', 'https://storage.googleapis.com/g2gcs-hosting-dotmat-8ddb06e014/index.html?sheet=https://docs.google.com/spreadsheets/d/1H28b3a-XhZH8Vjac6pJ9WM95yCBAdpVTCqN80KWpFZE/pubhtml', {});
+
+    function loadDotmat(data_type) {
+        $("#dotmat_demo").html("");
+        switch(data_type) {
+            case "n_and_e":
+                pymParent = new pym.Parent('dotmat_demo', 'https://storage.googleapis.com/g2gcs-hosting-dotmat-8ddb06e014/index.html?sheet=https://docs.google.com/spreadsheets/d/1H28b3a-XhZH8Vjac6pJ9WM95yCBAdpVTCqN80KWpFZE/pubhtml', {});
+                break;
+            case "n_only":
+                pymParent = new pym.Parent('dotmat_demo', 'https://storage.googleapis.com/g2gcs-hosting-dotmat-8ddb06e014/index.html?sheet=https://docs.google.com/spreadsheets/d/1OuYZ2YEez6vA24kvePzZA97Q8uWSa29hVs0Efi8ji-s/pubhtml', {});
+                break;
+            case "e_only":
+                pymParent = new pym.Parent('dotmat_demo', 'https://storage.googleapis.com/g2gcs-hosting-dotmat-8ddb06e014/index.html?sheet=https://docs.google.com/spreadsheets/d/13NBIEAbrKzK7PDe84MEVnVL3gYzREpHQKzJzA08k114/pubhtml', {})
+                break;
+            case "video_n":
+                pymParent = new pym.Parent('dotmat_demo', 'https://storage.googleapis.com/g2gcs-hosting-dotmat-v2-a76c37349b/index.html?sheet=https://docs.google.com/spreadsheets/d/1rp70DAaBm2BMbgt_-uKacgNjCW71s7XOUSRjKvN4IIM/pubhtml', {})
+                break;
+            case "hindi_v":
+                pymParent = new pym.Parent('dotmat_demo', 'https://storage.googleapis.com/g2gcs-hosting-dotmat-v2-a76c37349b/index.html?sheet=https://docs.google.com/spreadsheets/d/1bG8VpRfJMFylyBgce1l8o9Pz-_RYU6cBJFMPJCbksU4/pubhtml', {})
+        }
+    }
+
+    $(".dotmat-types li").click(function() {
+        let data_type = $(this).attr("data-type"),
+            is_active = $(this).hasClass("active");
+        if(!is_active) {
+            $(".dotmat-types li.active").removeClass("active");
+            $(this).addClass("active");
+            loadDotmat(data_type);
+        }
+    });
+    $(".dotmat-types select").change(function() {
+        let data_type = $(this).find(":selected").attr("data-type");
+        loadDotmat(data_type);
+    });
+</script>
 <script type="text/javascript">
     let gallery_width = 0;
     $(".gallery-container .to-card").each(function() {

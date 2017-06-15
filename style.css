@@ -415,6 +415,23 @@ a, a:hover{
     color: white;
 }
 
+.dotmat-types ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+.dotmat-types li{
+    cursor: pointer;
+    padding: 5px 0px;
+}
+
+.dotmat-types li.active {
+    border-bottom: 2px solid black;
+}
+
+.dotmat-types select {
+    display: none;
+}
 
 @media only screen
 and (min-device-width : 320px)
@@ -464,5 +481,20 @@ and (max-device-width : 736px) {
     }
     .gallery-container {
         overflow-x: auto;
+    }
+    .dotmat-types select {
+        display: block;
+        margin: 0px auto;
+        border: none;
+        border-bottom: 1px solid #ccc;
+        background: transparent;
+        padding: 5px;
+        margin-bottom: 10px;
+    }
+    .dotmat-types select:focus {
+        outline: none;
+    }
+    .dotmat-types ul {
+        display: none;
     }
 }
