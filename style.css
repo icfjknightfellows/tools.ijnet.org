@@ -90,8 +90,8 @@ p{
 }
 
 #contributors .to-card{
-    width: 203px;
-    margin-right: 10px;
+    width: 100%;
+    margin-right: 0px;
 }
 
 .to-card:hover{
@@ -430,13 +430,13 @@ a, a:hover{
 .subtext{
     height: 66px;
     overflow: hidden;
-    text-overflow: ellipsis;   
+    text-overflow: ellipsis;
 }
 
 .tools-card-title{
     height: 66px;
     overflow: hidden;
-    text-overflow: ellipsis; 
+    text-overflow: ellipsis;
 }
 
 .divider-line{
