@@ -433,6 +433,16 @@ a, a:hover{
     text-overflow: ellipsis;
 }
 
+.subtext p{
+
+    overflow : hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+    width: 250px;
+
+}
 .tools-card-title{
     height: 66px;
     overflow: hidden;
