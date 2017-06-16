@@ -419,6 +419,7 @@ a, a:hover{
     height: 240px;
     margin-bottom: 15px;
     overflow: hidden;
+    border-bottom: 1px solid #efefef;
 }
 
 .tools-card-title, .subtext, .call-to-action-button{
@@ -427,9 +428,15 @@ a, a:hover{
 
 }
 .subtext{
-      
-      text-overflow: ellipsis;   
+    height: 66px;
+    overflow: hidden;
+    text-overflow: ellipsis;   
+}
 
+.tools-card-title{
+    height: 66px;
+    overflow: hidden;
+    text-overflow: ellipsis; 
 }
 @media only screen
 and (min-device-width : 320px)
