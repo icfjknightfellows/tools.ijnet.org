@@ -103,14 +103,14 @@
                 <li data-type="n_only">Narrative only</li>
                 <li data-type="e_only">Exploratory only</li>
                 <li data-type="video_n">Video Narrative</li>
-                <li data-type="hindi_v">Hindi Version (Beta)</li>
+                <!-- <li data-type="hindi_v">Hindi Version (Beta)</li> -->
             </ul>
             <select>
                 <option data-type="n_and_e" selected>Narrative & Exploratory</option>
                 <option data-type="n_only">Narrative only</option>
                 <option data-type="e_only">Exploratory only</option>
                 <option data-type="video_n">Video Narrative</option>
-                <option data-type="hindi_v">Hindi Version (Beta)</option>
+                <!-- <option data-type="hindi_v">Hindi Version (Beta)</option> -->
             </select>
         </div>
         <div class="container dark-patch">
@@ -365,19 +365,19 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script src="bootstrap/js/bootstrap.min.js"></script>
 <script>
-    var pymParent = new pym.Parent('dotmat_demo', 'https://storage.googleapis.com/g2gcs-hosting-dotmat-8ddb06e014/index.html?sheet=https://docs.google.com/spreadsheets/d/1H28b3a-XhZH8Vjac6pJ9WM95yCBAdpVTCqN80KWpFZE/pubhtml', {});
+    var pymParent = new pym.Parent('dotmat_demo', 'https://storage.googleapis.com/g2gcs-hosting-gun-deaths-22be478b51/index.html?sheet=https://docs.google.com/spreadsheets/d/1H28b3a-XhZH8Vjac6pJ9WM95yCBAdpVTCqN80KWpFZE/pubhtml', {});
 
     function loadDotmat(data_type) {
         $("#dotmat_demo").html("");
         switch(data_type) {
             case "n_and_e":
-                pymParent = new pym.Parent('dotmat_demo', 'https://storage.googleapis.com/g2gcs-hosting-dotmat-8ddb06e014/index.html?sheet=https://docs.google.com/spreadsheets/d/1H28b3a-XhZH8Vjac6pJ9WM95yCBAdpVTCqN80KWpFZE/pubhtml', {});
+                pymParent = new pym.Parent('dotmat_demo', 'https://storage.googleapis.com/g2gcs-hosting-gun-deaths-22be478b51/index.html?sheet=https://docs.google.com/spreadsheets/d/1H28b3a-XhZH8Vjac6pJ9WM95yCBAdpVTCqN80KWpFZE/pubhtml', {});
                 break;
             case "n_only":
-                pymParent = new pym.Parent('dotmat_demo', 'https://storage.googleapis.com/g2gcs-hosting-dotmat-8ddb06e014/index.html?sheet=https://docs.google.com/spreadsheets/d/1OuYZ2YEez6vA24kvePzZA97Q8uWSa29hVs0Efi8ji-s/pubhtml', {});
+                pymParent = new pym.Parent('dotmat_demo', 'https://storage.googleapis.com/g2gcs-hosting-gun-deaths-22be478b51/index.html?sheet=https://docs.google.com/spreadsheets/d/1OuYZ2YEez6vA24kvePzZA97Q8uWSa29hVs0Efi8ji-s/pubhtml', {});
                 break;
             case "e_only":
-                pymParent = new pym.Parent('dotmat_demo', 'https://storage.googleapis.com/g2gcs-hosting-dotmat-8ddb06e014/index.html?sheet=https://docs.google.com/spreadsheets/d/13NBIEAbrKzK7PDe84MEVnVL3gYzREpHQKzJzA08k114/pubhtml', {})
+                pymParent = new pym.Parent('dotmat_demo', 'https://storage.googleapis.com/g2gcs-hosting-gun-deaths-22be478b51/index.html?sheet=https://docs.google.com/spreadsheets/d/13NBIEAbrKzK7PDe84MEVnVL3gYzREpHQKzJzA08k114/pubhtml', {})
                 break;
             case "video_n":
                 pymParent = new pym.Parent('dotmat_demo', 'https://storage.googleapis.com/g2gcs-hosting-dotmat-v2-a76c37349b/index.html?sheet=https://docs.google.com/spreadsheets/d/1rp70DAaBm2BMbgt_-uKacgNjCW71s7XOUSRjKvN4IIM/pubhtml', {})
