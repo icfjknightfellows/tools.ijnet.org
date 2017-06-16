@@ -148,7 +148,7 @@ a, a:hover{
     text-align: left;
     /*padding-left: 25px;*/
     /*padding-right: 25px;*/
-    padding-bottom: 20px;
+    padding-bottom: 5px;
     box-shadow: 0 20px 20px rgba(0,0,0,.08);
     border:1px solid rgba(0,0,0,.08);
     transition: all 250ms cubic-bezier(.02, .01, .47, 1);
@@ -421,16 +421,40 @@ a, a:hover{
     overflow: hidden;
 }
 
-.tools-card-title, .subtext, .call-to-action-button{
+.tools-card-title, .subtext, .call-to-action-button, .card-footer, .divider{
     padding-left: 20px;
     padding-right: 20px;
 
 }
 .subtext{
-      
-      text-overflow: ellipsis;   
 
+      text-overflow: ellipsis;
 }
+
+.divider-line{
+    border-bottom: 1px solid #efefef;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.single-profile{
+    height: 30px;
+    width: 30px;
+    border-radius: 50px;
+    overflow:hidden;
+    display: inline-block;
+}
+
+.single-profile img{
+    filter: grayscale(100%);
+    opacity: 0.5;
+}
+
+.tools-card:hover .single-profile img{
+    filter: grayscale(0%);
+    opacity: 1;
+}
+
 @media only screen
 and (min-device-width : 320px)
 and (max-device-width : 736px) {
