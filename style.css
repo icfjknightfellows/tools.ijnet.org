@@ -506,6 +506,9 @@ a, a:hover{
 .dotmat-types select {
     display: none;
 }
+.dotmat-last{
+    margin-top: 20px;
+}
 
 @media only screen
 and (min-device-width : 320px)
