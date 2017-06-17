@@ -470,6 +470,9 @@
     });
 
     $(document).on("scroll", onScroll);
+    let window_height = $(window).height(),
+        side_list_max_top = 0.40 * window_height,
+        side_list_min_top = 0.10 * window_height;
     function onScroll(event){
         let scroll_position = $(document).scrollTop();
         $('#side_list a').each(function () {
@@ -483,6 +486,10 @@
                 // history.pushState(null, null, current_href);
             }
         });
+        let scroll_diff = side_list_max_top - scroll_position;
+        if(scroll_diff <= side_list_max_top && scroll_diff >= side_list_min_top) {
+            $("#side_list .list-unstyled").css("top", scroll_diff);
+        }
     }
 </script>
 </body>

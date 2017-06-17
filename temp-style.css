@@ -40,6 +40,6 @@ ul.navbar-nav, .navbar-nav li a {
         position: fixed;
         width: 150px;
         margin-left: 20px;
-        top: 45%;
+        /*top: 45%;*/
     }
 }
