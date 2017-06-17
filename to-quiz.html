@@ -386,9 +386,9 @@ var pymParent = new pym.Parent('quiz_demo', 'https://storage.googleapis.com/g2gc
             }
         });
         let scroll_diff = side_list_max_top - scroll_position;
-        if(scroll_diff <= side_list_max_top && scroll_diff >= side_list_min_top) {
-            $("#side_list .list-unstyled").css("top", scroll_diff);
-        }
+        scroll_diff = Math.min(scroll_diff, side_list_max_top);
+        scroll_diff = Math.max(scroll_diff, side_list_min_top);
+        $("#side_list .list-unstyled").css("top", scroll_diff);
     }
 </script>
 </body>
