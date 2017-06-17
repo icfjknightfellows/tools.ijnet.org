@@ -196,6 +196,7 @@ a, a:hover{
     text-align: center;
     display: inline-block;
     margin-right: 10px;
+    cursor: pointer;
 }
 
 .active-step{
@@ -245,6 +246,7 @@ a, a:hover{
     margin-bottom: 15px;
     float: left;
     margin-right: 10px;
+    cursor: pointer;
 }
 
 .next-step .call-to-action-text, .prev-step .call-to-action-text{

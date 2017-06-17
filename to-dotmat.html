@@ -459,9 +459,9 @@
     });
 
     let gallery_height = $(".gallery-container").height(),
-        side_list = document.querySelector(".side-list .list-unstyled").getBoundingClientRect(),
-        side_list_top = side_list.top,
-        side_bottom = side_list.bottom;
+        side_list_ = document.querySelector(".side-list .list-unstyled").getBoundingClientRect(),
+        side_list_top = side_list_.top,
+        side_bottom = side_list_.bottom;
 
     $(document).on("scroll", onScroll);
     function onScroll(event){
