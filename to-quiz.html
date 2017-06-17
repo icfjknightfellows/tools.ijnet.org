@@ -103,42 +103,44 @@
         </div>
     </div>
     <div class="clearfix section-spacing"></div>
+</div>
     <div id="who-is-using-it">
         <div class="article-container">
             <div class="section-title">Who is using it?</div>
-            <div class="gallery-container">
-                <div class="gallary-view">
-                    <a href="http://www.onlymyhealth.com/what-happens-when-you-go-to-the-doctor-in-hindi-1491482545" target="blank">
-                        <div class="to-card">
-                            <img src="src/img/jagran.png" width="100%">
-                            <div class="to-card-content">
-                                <div class="date-line">Apr 6, 2017</div>
-                                <div class="to-card-caption">
-                                    <p>How well do you really know what happens when you visit a doctor?</p>
-                                </div>
-                                <img src="src/img/jagran_logo.png" class="logo_img" width="60%">
+        </div>
+        <div class="gallery-container">
+            <div class="gallary-view">
+                <a href="http://www.onlymyhealth.com/what-happens-when-you-go-to-the-doctor-in-hindi-1491482545" target="blank">
+                    <div class="to-card">
+                        <img src="src/img/jagran.png" width="100%">
+                        <div class="to-card-content">
+                            <div class="date-line">Apr 6, 2017</div>
+                            <div class="to-card-caption">
+                                <p>How well do you really know what happens when you visit a doctor?</p>
                             </div>
+                            <img src="src/img/jagran_logo.png" class="logo_img" width="60%">
                         </div>
-                    </a>
-                    <a href="http://datanewsroom.com/sachintendulkar/" target="blank">
-                        <div class="to-card">
-                            <img src="src/img/datanewsroom.png" width="100%">
-                            <div class="to-card-content">
-                                <div class="date-line">Apr 24, 2017</div>
-                                <div class="to-card-caption">
-                                    <p>How well do you know Sachin Tendulkar? Take this quiz to find out.</p>
-                                </div>
-                                <img src="src/img/datanewsroom_logo.png" class="logo_img" width="60%">
+                    </div>
+                </a>
+                <a href="http://datanewsroom.com/sachintendulkar/" target="blank">
+                    <div class="to-card">
+                        <img src="src/img/datanewsroom.png" width="100%">
+                        <div class="to-card-content">
+                            <div class="date-line">Apr 24, 2017</div>
+                            <div class="to-card-caption">
+                                <p>How well do you know Sachin Tendulkar? Take this quiz to find out.</p>
                             </div>
+                            <img src="src/img/datanewsroom_logo.png" class="logo_img" width="60%">
                         </div>
-                    </a>
-                    <div class="clearfix"></div>
-                </div>
+                    </div>
+                </a>
+                <div class="clearfix"></div>
             </div>
         </div>
     </div>
     <div class="clearfix section-spacing"></div>
     <br>
+<div class="container">
     <div id="how-to-use-it">
         <div class="article-container">
             <div class="section-title">How to use it</div>
@@ -306,11 +308,17 @@ var pymParent = new pym.Parent('quiz_demo', 'https://storage.googleapis.com/g2gc
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script src="bootstrap/js/bootstrap.min.js"></script>
 <script type="text/javascript">
-    let gallery_width = 0;
+    let gallery_width = 0,
+        hide_side_list = false;
+
     $(".gallery-container .to-card").each(function() {
         gallery_width += $(this).width() + 17;
     });
     $(".gallery-container .gallary-view").width(gallery_width);
+    if(gallery_width > 980) {
+        hide_side_list = true;
+    }
+
     let $root = $('html, body');
     $('.side-list a').click(function(e) {
         e.preventDefault();
@@ -347,6 +355,12 @@ var pymParent = new pym.Parent('quiz_demo', 'https://storage.googleapis.com/g2gc
         $("#setup-step-" + step_numer).hide();
         $("#setup-step-" + (step_numer - 1)).show();
     });
+
+    let gallery_height = $(".gallery-container").height(),
+        side_list = document.querySelector(".side-list .list-unstyled").getBoundingClientRect(),
+        side_list_top = side_list.top,
+        side_bottom = side_list.bottom;
+
     $(document).on("scroll", onScroll);
     function onScroll(event){
         let scroll_position = $(document).scrollTop();
@@ -361,6 +375,16 @@ var pymParent = new pym.Parent('quiz_demo', 'https://storage.googleapis.com/g2gc
                 history.pushState(null, null, current_href);
             }
         });
+        if(hide_side_list) {
+            let gallery = document.querySelector(".gallery-container").getBoundingClientRect(),
+                gallery_top = gallery.top,
+                gallery_bottom = gallery.bottom;
+            if((gallery_top >= side_list_top && gallery_top <= side_bottom) || (gallery_bottom >= side_list_top && gallery_bottom <= side_bottom) || (side_list_top >= gallery_top && side_bottom <= gallery_bottom)) {
+                $("#side_list").css("visibility", "hidden");
+            } else {
+                $("#side_list").css("visibility", "visible");
+            }
+        }
     }
 </script>
 </body>
