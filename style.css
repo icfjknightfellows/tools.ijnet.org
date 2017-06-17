@@ -513,6 +513,10 @@ a, a:hover{
     margin-top: 20px;
 }
 
+#contributors .col-sm-6{
+    padding-left: 0px;
+}
+
 @media only screen
 and (min-device-width : 320px)
 and (max-device-width : 736px) {
