@@ -13,10 +13,11 @@ body{
 }
 
 .article-container{
-    max-width: 640px;
+    max-width: 700px;
     text-align: left;
     margin-left: auto;
     margin-right: auto;
+    position: relative;
 }
 
 
@@ -87,6 +88,7 @@ p{
     margin-right: 15px;
     width: 204px;
     float: left;
+    transition: all 250ms cubic-bezier(.02, .01, .47, 1);
 }
 
 #contributors .to-card{
@@ -100,9 +102,19 @@ p{
 }
 
 .to-card:hover{
-    box-shadow: 0px 3px 15px lightgrey;
     transition: 0.2s ease-in-out;
     cursor: pointer;
+    box-shadow: 0 10px 15px rgba(0,0,0,.16);
+    transform: translate(0,-10px);
+    transition-delay: 0s !important;
+}
+
+#who-is-using-it .section-title{
+    margin-bottom: 5px;
+}
+
+.gallary-view{
+    padding-right: 50px;
 }
 
 .to-card-content{
@@ -521,6 +533,26 @@ a, a:hover{
 
 #contributors .col-sm-6{
     padding-left: 0px;
+}
+
+.fade-effect{
+    height: 100%;
+    background: red;
+    position: absolute;
+    right: 0px;
+    z-index: 999;
+    top: 0px;
+    width: 100px;
+    background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0), white);
+}
+
+.gallery-container {
+    overflow-x: auto;
+    position: relative;
+    padding-bottom: 30px;
+    padding-top: 10px;
+    padding-left: 10px;
+    margin-left: -10px;
 }
 
 @media only screen
