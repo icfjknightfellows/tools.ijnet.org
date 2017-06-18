@@ -1,6 +1,3 @@
-# tools.ijnet.org
-Tools site for IJNET.org
-
 tools.ijnet.org.Card.Tool
 
 tools.ijnet.org.Card.Steps
