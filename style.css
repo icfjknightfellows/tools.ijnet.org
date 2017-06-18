@@ -18,6 +18,8 @@ body{
     margin-left: auto;
     margin-right: auto;
     position: relative;
+    display: inline-block;
+    width: 100%;
 }
 
 
@@ -51,6 +53,16 @@ body{
 
 .section-title{
     font-size: 12px;
+    font-family: helvetica, arial;
+    font-weight: 100;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #999;
+    margin-bottom: 15px;
+}
+
+.contributors-title{
+    font-size: 10px;
     font-family: helvetica, arial;
     font-weight: 100;
     text-transform: uppercase;
@@ -293,7 +305,7 @@ a, a:hover{
 
 /*========category=======*/
 .profile-details a{
-    font-size: 16px !important;
+    font-size: 14px !important;
     color: #333 !important;
     font-family: 'Droid Serif', serif !important;
     font-weight: lighter;
@@ -350,12 +362,13 @@ a, a:hover{
 }
 
 .profile-img{
-    width: 40px;
+    width: 35px;
     border-radius: 50px;
     overflow: hidden;
     display: inline-block;
     float: left;
     margin-right: 10px;
+    margin-top: 2px;
 }
 
 .step-details{
@@ -531,9 +544,15 @@ a, a:hover{
     margin-top: 20px;
 }
 
-#contributors .col-sm-6{
+#contributors .col-sm-4{
     padding-left: 0px;
 }
+
+#contributors .to-card{
+    padding: 10px;
+}
+
+
 
 .fade-effect{
     height: 100%;
