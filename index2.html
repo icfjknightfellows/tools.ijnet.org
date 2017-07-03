@@ -6,7 +6,28 @@
     new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
     j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-M3FCKN6');</script>
+    })(window,document,'script','dataLayer','GTM-M3FCKN6');
+
+    window.onload = function () {
+    var string_contain = 'ona2017';
+    var url = window.location.href;
+    if(url.indexOf(string_contain) >= 0) {
+        document.getElementById("back").href = "index.html";
+        document.getElementById("back").innerHTML = "< Back to all tools";
+        document.getElementById("ona_paragraph").innerHTML = "This is for ONA conference";
+        var x = document.getElementsByClassName("display-these");
+        for(var a = 0;a<x.length;a++) {
+            x[a].style.display = 'compact';
+        }
+
+        var x = document.getElementsByClassName("dont-display-these");
+        for(var a = 0;a<x.length;a++) {
+            x[a].style.display = 'none';
+        }
+    }
+}
+    </script>
+
     <!-- End Google Tag Manager -->
     <title>ICFJ Tools</title>
     <meta charset='utf-8'/>
@@ -99,8 +120,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </div>
       </div>
     </div> -->
+    <div id="back_id">
+      <a id="back"></a>
+    </div>
+    <p align="left" id="ona_paragraph"></p>
 
-    <div class="col-sm-4 card-holder">
+    <div class="col-sm-4 card-holder dont-display-these">
         <a href="to-quiz.html">
         <div class="tools-card">
             <div class="tools-card-image">
@@ -119,7 +144,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </a>
     </div>
 
-    <div class="col-sm-4 card-holder">
+    <div class="col-sm-4 card-holder dont-display-these">
         <a href="to-dotmat.html">
         <div class="tools-card">
             <div class="tools-card-image">
@@ -137,7 +162,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </a>
     </div>
 
-    <div class="col-sm-4 card-holder">
+    <div class="col-sm-4 card-holder dont-display-these">
         <a href="360_video_template.html">
         <div class="tools-card">
             <div class="tools-card-image">
@@ -158,7 +183,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- <div class="clearfix"></div> -->
 
 
-     <div class="col-sm-4 card-holder">
+     <div class="col-sm-4 card-holder dont-display-these">
         <a href="ANCIR.html">
         <div class="tools-card">
             <div class="tools-card-image">
@@ -178,7 +203,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
 
 
-    <div class="col-sm-4 card-holder">
+    <div class="col-sm-4 card-holder dont-display-these">
         <a href="aleph.html">
         <div class="tools-card">
             <div class="tools-card-image">
@@ -196,7 +221,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </a>
     </div>
 
-    <div class="col-sm-4 card-holder">
+    <div class="col-sm-4 card-holder display-these">
         <a href="briefcase.html">
         <div class="tools-card">
             <div class="tools-card-image">
@@ -218,7 +243,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- <div class="clearfix"></div> -->
 
 
-    <div class="col-sm-4 card-holder">
+    <div class="col-sm-4 card-holder display-these">
         <a href="digital_friday.html">
         <div class="tools-card">
             <div class="tools-card-image">
@@ -236,7 +261,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
 
 
-    <div class="col-sm-4 card-holder">
+    <div class="col-sm-4 card-holder dont-display-these">
         <a href="digital_security.html">
         <div class="tools-card">
             <div class="tools-card-image">
@@ -254,7 +279,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
 
 
-    <div class="col-sm-4 card-holder">
+    <div class="col-sm-4 card-holder dont-display-these">
         <a href="grano.html">
         <div class="tools-card">
             <div class="tools-card-image">
@@ -276,7 +301,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- <div class="clearfix"></div> -->
 
 
-    <div class="col-sm-4 card-holder">
+    <div class="col-sm-4 card-holder dont-display-these">
         <a href="360_video_newsroom.html">
         <div class="tools-card">
             <div class="tools-card-image">
@@ -294,7 +319,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
 
 
-    <div class="col-sm-4 card-holder">
+    <div class="col-sm-4 card-holder dont-display-these">
         <a href="hackdash.html">
         <div class="tools-card">
             <div class="tools-card-image">
@@ -313,7 +338,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
 
 
-    <div class="col-sm-4 card-holder">
+    <div class="col-sm-4 card-holder dont-display-these">
         <a href="huru_map.html">
         <div class="tools-card">
             <div class="tools-card-image">
@@ -337,7 +362,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- <div class="clearfix"></div> -->
 
 
-    <div class="col-sm-4 card-holder">
+    <div class="col-sm-4 card-holder dont-display-these">
         <a href="narcoData.html">
         <div class="tools-card">
             <div class="tools-card-image">
@@ -356,7 +381,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
 
 
-    <div class="col-sm-4 card-holder">
+    <div class="col-sm-4 card-holder dont-display-these">
         <a href="push.html">
         <div class="tools-card">
             <div class="tools-card-image">
@@ -375,7 +400,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
 
 
-    <div class="col-sm-4 card-holder" data-category="B">
+    <div class="col-sm-4 card-holder dont-display-these" data-category="B">
         <a href="salama.html">
         <div class="tools-card">
             <div class="tools-card-image">
@@ -396,7 +421,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     <!-- <div class="clearfix"></div> -->
 
-    <div class="col-sm-4 card-holder" data-fellow="A">
+    <div class="col-sm-4 card-holder dont-display-these" data-fellow="A">
         <a href="spade.html">
         <div class="tools-card">
             <div class="tools-card-image">
@@ -414,7 +439,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </a>
     </div>
 
-    <div class="col-sm-4 card-holder" data-fellow="A" data-category="B">
+    <div class="col-sm-4 card-holder dont-display-these" data-fellow="A" data-category="B">
         <a href="tax_clock.html">
         <div class="tools-card">
             <div class="tools-card-image">
@@ -432,6 +457,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </div>
         </a>
     </div>
+
 
 </div>
 <script type="text/javascript" src="//pym.nprapps.org/pym.v1.min.js"></script>
