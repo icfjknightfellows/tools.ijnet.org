@@ -125,6 +125,12 @@ p{
     margin-bottom: 5px;
 }
 
+#back_id {
+  text-align: left;
+  padding-bottom: 20px;
+  
+}
+
 .gallary-view{
     padding-right: 50px;
 }
