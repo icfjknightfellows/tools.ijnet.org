@@ -7,25 +7,6 @@
     j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
     })(window,document,'script','dataLayer','GTM-M3FCKN6');
-
-    window.onload = function () {
-    var string_contain = 'ona2017';
-    var url = window.location.href;
-    if(url.indexOf(string_contain) >= 0) {
-        document.getElementById("back").href = "index.html";
-        document.getElementById("back").innerHTML = "< Back to all tools";
-        document.getElementById("ona_paragraph").innerHTML = "This is for ONA conference";
-        var x = document.getElementsByClassName("display-these");
-        for(var a = 0;a<x.length;a++) {
-            x[a].style.display = 'compact';
-        }
-
-        var x = document.getElementsByClassName("dont-display-these");
-        for(var a = 0;a<x.length;a++) {
-            x[a].style.display = 'none';
-        }
-    }
-}
     </script>
 
     <!-- End Google Tag Manager -->
@@ -120,10 +101,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </div>
       </div>
     </div> -->
-    <div id="back_id">
-      <a id="back"></a>
+    <div id="back_button">
+      <a src="index.html">< Back to all tools</a>
     </div>
-    <p align="left" id="ona_paragraph"></p>
+    <p id="paragraph_text">This is for ONA conference</p>
 
     <div class="col-sm-4 card-holder dont-display-these">
         <a href="to-quiz.html">
@@ -521,6 +502,25 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       }
     }
   });
+
+  //snippet for displaying the cards on filtering
+  let string_contain = 'ona2017';
+  let url = window.location.href;
+  if(url.indexOf(string_contain) >= 0) {
+      document.getElementById("back_button").style.display = 'block';
+      document.getElementById("paragraph_text").style.display = 'block';
+      let displayThese = document.getElementsByClassName("display-these");
+      for(let displayElement = 0; displayElement < displayThese.length; displayElement++) {
+          displayThese[displayElement].style.display = 'block';
+      }
+
+      let dontDisplayThese = document.getElementsByClassName("dont-display-these");
+      for(let dontDisplayElement = 0; dontDisplayElement < dontDisplayThese.length; dontDisplayElement++) {
+          dontDisplayThese[dontDisplayElement].style.display = 'none';
+      }
+  }
+  //end of snippet for displaying the cards on filtering
+
   }));
 </script>
 </body>

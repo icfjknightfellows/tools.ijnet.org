@@ -125,10 +125,15 @@ p{
     margin-bottom: 5px;
 }
 
-#back_id {
+#back_button {
   text-align: left;
   padding-bottom: 20px;
-  
+  display: none;
+}
+
+#paragraph_text {
+  text-align: left;
+  display: none;
 }
 
 .gallary-view{
