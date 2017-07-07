@@ -129,6 +129,7 @@ p{
   text-align: left;
   padding-bottom: 20px;
   display: none;
+  cursor: pointer;
 }
 
 #paragraph_text {
