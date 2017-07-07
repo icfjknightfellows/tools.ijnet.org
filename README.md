@@ -1,11 +1,9 @@
-tools.ijnet.org.Card.Tool
+STEP 1: Open the index.html file in tools.ijnet.org folder
 
-tools.ijnet.org.Card.Steps
+STEP 2: Search for variable called 'conference_name'. Currently it has 'ona2017' as its value. The name of conference can be updated in this variable.
 
-tools.ijnet.org.Card.Contributors
+STEP 3: Search for <p> tag with id 'conference_paragraph_text'. The description of the conference can be updated in this tag
 
-tools.ijnet.org.Card.ListOfExampleSites
+STEP 4: To get cards related to particular conference name, in the url add ?tag=name_of_conference which should match the value entered in variable in step 2
 
-tools.ijnet.org.Card.toParagraph
-
-tools.ijnet.org.Card.toHeadlineH1
+Eg: http://tools.ijnet.org?tag=ona2017
