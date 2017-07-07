@@ -102,7 +102,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </div>
     </div> -->
     <a id="back_button">< Back to all tools</a>
-    <p id="paragraph_text">This is for ONA conference</p>
+    <p id="conference_paragraph_text">This is for ONA conference</p>
 
     <div class="col-sm-4 card-holder dont-display-these">
         <a href="to-quiz.html">
@@ -502,11 +502,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   });
 
   //snippet for displaying the cards on filtering
-  let string_contain = 'ona2017';
+  let conference_name = 'ona2017';
   let url = window.location.href;
-  if(url.indexOf(string_contain) >= 0) {
+  if(url.indexOf(conference_name) >= 0) {
       document.getElementById("back_button").style.display = 'block';
-      document.getElementById("paragraph_text").style.display = 'block';
+      document.getElementById("conference_paragraph_text").style.display = 'block';
       let displayThese = document.getElementsByClassName("display-these");
       for(let displayElement = 0; displayElement < displayThese.length; displayElement++) {
           displayThese[displayElement].style.display = 'block';
