@@ -104,13 +104,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <a id="back_button">< Back to all tools</a>
     <p id="conference_paragraph_text">This is for ONA conference</p>
 
-    <div>
+    <div id="home_paragraph_text">
         <h1>ICFJ Knight Fellowships</h1>
         <h2>Tools and Projects</h2>
         <p>The ICFJ Knight Fellows create a culture of news innovation and experimentation worldwide to deepen coverage, expand news delivery and engage citizens in the editorial process. Through that work, they launch web and mobile tools that transform journalism in their regions and spark new opportunities globally.</p>
         <p>We've curated a list of ICFJ Knight tools that we think would offer great possibilities for journalists and technologists around the globe. If you adopt any of these tools, or lead any new projects inspired by them, tweet at us via @ICFJKnight. Our Fellows and the ICFJ Knight team are available to help you get started.</p>
     </div>
-       
+
     <div class="col-sm-4 card-holder dont-display-these">
         <a href="to-quiz.html">
         <div class="tools-card">
@@ -322,7 +322,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </div>
         </a>
      </div>
-        
+
     <div class="col-sm-4 card-holder dont-display-these">
         <a href="healthxnews_handbook.html">
         <div class="tools-card">
@@ -438,8 +438,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             </div>
         </div>
         </a>
-    </div>    
-        
+    </div>
+
     <div class="col-sm-4 card-holder dont-display-these" data-fellow="A">
         <a href="spade.html">
         <div class="tools-card">
@@ -477,15 +477,19 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </a>
     </div>
  </div>
-    
- <div> 
-     <p>The Knight International Journalism Fellowships  program is funded by the John S. and James L. Knight Foundation. The Fellows build on past successes in the Knight program, which has a strong record of achieving impact. They work in countries where there is a good opportunity to create the news media of the future.</p>
-     <p>With additional support from the Bill & Melinda Gates Foundation, Knight Fellows are empowering journalists in sub-Saharan Africa and India to use the latest digital tools to tell compelling stories on health and development issues.</p>
-     <div>  
-         <img src="http://marylandreporter.com/wp-content/uploads/2014/02/kflogo-tag-3000px-1170x235.jpg" height="50" alt="Knight Foundation logo">
-         <img src="https://www.epiconline.org/wp-content/uploads/2016/03/Bill-Melinda-Gates-Foundation-Logo.svg_.png" height="50" alt="Gates Foundation logo">
-      </div>
-  </div>
+
+ <div class="extra-info">
+   <div class="additional-text">
+       <p>The Knight International Journalism Fellowships  program is funded by the John S. and James L. Knight Foundation. The Fellows build on past successes in the Knight program, which has a strong record of achieving impact. They work in countries where there is a good opportunity to create the news media of the future.</p>
+       <p>With additional support from the Bill & Melinda Gates Foundation, Knight Fellows are empowering journalists in sub-Saharan Africa and India to use the latest digital tools to tell compelling stories on health and development issues.</p>
+       <div>
+           <img src="http://marylandreporter.com/wp-content/uploads/2014/02/kflogo-tag-3000px-1170x235.jpg" height="50" alt="Knight Foundation logo">
+           <img src="https://www.epiconline.org/wp-content/uploads/2016/03/Bill-Melinda-Gates-Foundation-Logo.svg_.png" height="50" alt="Gates Foundation logo">
+        </div>
+    </div>
+ </div>
+
+
 
 <script type="text/javascript" src="//pym.nprapps.org/pym.v1.min.js"></script>
 <script>
@@ -555,6 +559,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   if(url.indexOf(conference_name) >= 0) {
       document.getElementById("back_button").style.display = 'block';
       document.getElementById("conference_paragraph_text").style.display = 'block';
+      document.getElementById('home_paragraph_text').style.display = 'none';
       let displayThese = document.getElementsByClassName("display-these");
       for(let displayElement = 0; displayElement < displayThese.length; displayElement++) {
           displayThese[displayElement].style.display = 'block';
@@ -567,6 +572,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   document.getElementById('back_button').addEventListener('click', function(){
     location.reload(true)
     window.location.replace('index.html')
+    document.getElementById('home_paragraph_text').style.display = 'block';
     // document.getElementById("back_button").href = 'http://localhost/tools.ijnet.org/index.html';
   })
   //end of snippet for displaying the cards on filtering
