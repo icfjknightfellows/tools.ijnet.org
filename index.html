@@ -101,22 +101,30 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </div>
       </div>
     </div> -->
-    <a id="back_button">< Back to all tools</a>
+    <!-- <a id="back_button">< Back to all tools</a> -->
+    <a id="back_button" href="index.html">
+        <div class="container back-to-tools">
+            <div class="back-to-tools-button">
+                Back to tools
+            </div>
+        </div>
+    </a>
     <div class="dropdown ijnet-tools-dropdown">
-      <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Select Conference
+      <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Search Conference
       <span class="caret"></span></button>
       <ul class="dropdown-menu">
         <li><a href="/?tag=ona2017">ONA</a></li>
         <li><a href="/?tag=icfj">ICFJ</a></li>
       </ul>
     </div>
-    <p id="conference_paragraph_text">This is for ONA conference</p>
+    <p class="conference_paragraph_text" data-tag="ona2017">This is for ONA conference</p>
+    <p class="conference_paragraph_text" data-tag="icfj">This is for ICFJ conference</p>
 
     <div id="home_paragraph_text">
         <h1>ICFJ Knight Fellowships</h1>
         <h2>Tools and Projects</h2>
-        <p>The ICFJ Knight Fellows create a culture of news innovation and experimentation worldwide to deepen coverage, expand news delivery and engage citizens in the editorial process. Through that work, they launch web and mobile tools that transform journalism in their regions and spark new opportunities globally.</p>
-        <p>We've curated a list of ICFJ Knight tools that we think would offer great possibilities for journalists and technologists around the globe. If you adopt any of these tools, or lead any new projects inspired by them, tweet at us via @ICFJKnight. Our Fellows and the ICFJ Knight team are available to help you get started.</p>
+        <p style="text-align:left">The ICFJ Knight Fellows create a culture of news innovation and experimentation worldwide to deepen coverage, expand news delivery and engage citizens in the editorial process. Through that work, they launch web and mobile tools that transform journalism in their regions and spark new opportunities globally.</p>
+        <p style="text-align:left">We've curated a list of ICFJ Knight tools that we think would offer great possibilities for journalists and technologists around the globe. If you adopt any of these tools, or lead any new projects inspired by them, tweet at us via @ICFJKnight. Our Fellows and the ICFJ Knight team are available to help you get started.</p>
     </div>
 
     <div class="col-sm-4 card-holder dont-display-these" data-tag="">
@@ -564,7 +572,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   let conference_name = tag[1];
   if(url.indexOf(conference_name) >= 0) {
       document.getElementById("back_button").style.display = 'block';
-      document.getElementById("conference_paragraph_text").style.display = 'block';
+      $( ".conference_paragraph_text[data-tag='"+conference_name+"']" )[0].style.display='block';
+      // document.getElementById("conference_paragraph_text").style.display = 'block';
       document.getElementById('home_paragraph_text').style.display = 'none';
       let imp_class = conference_name+"-card";
       let displayThese = $( ".card-holder[data-tag='"+conference_name+"']" );
@@ -572,16 +581,14 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           displayThese[displayElement].style.display = 'block';
       }
       let dontDisplayThese = $(".card-holder[data-tag!='"+conference_name+"']");
-      console.log(dontDisplayThese);
       for(let dontDisplayElement = 0; dontDisplayElement < dontDisplayThese.length; dontDisplayElement++) {
           dontDisplayThese[dontDisplayElement].style.display = 'none';
       }
   }
   document.getElementById('back_button').addEventListener('click', function(){
-    location.reload(true)
-    window.location.replace('index.html')
+    // location.reload(true)
+    // window.location.replace('index.html')
     document.getElementById('home_paragraph_text').style.display = 'block';
-    // document.getElementById("back_button").href = 'http://localhost/tools.ijnet.org/index.html';
   })
   //end of snippet for displaying the cards on filtering
 

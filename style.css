@@ -15,6 +15,7 @@ body{
 .extra-info{
   text-align: left;
   max-width: 980px;
+  margin:auto;
 }
 
 .ijnet-tools-dropdown{
@@ -141,7 +142,7 @@ p{
   cursor: pointer;
 }
 
-#conference_paragraph_text {
+.conference_paragraph_text {
   text-align: left;
   display: none;
 }
