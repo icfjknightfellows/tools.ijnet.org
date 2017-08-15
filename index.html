@@ -109,7 +109,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             </div>
         </div>
     </a>
-    <div class="dropdown ijnet-tools-dropdown">
+    <div class="dropdown ijnet-tools-dropdown" id="conference-dropdown">
       <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Search Conference
       <span class="caret"></span></button>
       <ul class="dropdown-menu">
@@ -575,6 +575,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       $( ".conference_paragraph_text[data-tag='"+conference_name+"']" )[0].style.display='block';
       // document.getElementById("conference_paragraph_text").style.display = 'block';
       document.getElementById('home_paragraph_text').style.display = 'none';
+      document.getElementById('conference-dropdown').style.display = 'none';
       let imp_class = conference_name+"-card";
       let displayThese = $( ".card-holder[data-tag='"+conference_name+"']" );
       for(let displayElement = 0; displayElement < displayThese.length; displayElement++) {
@@ -588,6 +589,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   document.getElementById('back_button').addEventListener('click', function(){
     // location.reload(true)
     // window.location.replace('index.html')
+    document.getElementById('conference-dropdown').style.display = 'block'
     document.getElementById('home_paragraph_text').style.display = 'block';
   })
   //end of snippet for displaying the cards on filtering
