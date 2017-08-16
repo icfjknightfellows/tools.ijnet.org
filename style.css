@@ -12,6 +12,16 @@ body{
     padding: 0px;
 }
 
+.extra-info{
+  text-align: left;
+  max-width: 980px;
+  margin:auto;
+}
+
+.ijnet-tools-dropdown{
+  text-align: left;
+}
+
 .article-container{
     max-width: 700px;
     text-align: left;
@@ -132,7 +142,7 @@ p{
   cursor: pointer;
 }
 
-#conference_paragraph_text {
+.conference_paragraph_text {
   text-align: left;
   display: none;
 }

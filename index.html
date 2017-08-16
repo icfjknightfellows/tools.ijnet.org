@@ -101,17 +101,33 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </div>
       </div>
     </div> -->
-    <a id="back_button">< Back to all tools</a>
-    <p id="conference_paragraph_text">This is for ONA conference</p>
+    <!-- <a id="back_button">< Back to all tools</a> -->
+    <a id="back_button" href="index.html">
+        <div class="container back-to-tools">
+            <div class="back-to-tools-button">
+                Back to tools
+            </div>
+        </div>
+    </a>
+    <div class="dropdown ijnet-tools-dropdown" id="conference-dropdown">
+      <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Search Conference
+      <span class="caret"></span></button>
+      <ul class="dropdown-menu">
+        <li><a href="/?tag=ona2017">ONA</a></li>
+        <li><a href="/?tag=icfj">ICFJ</a></li>
+      </ul>
+    </div>
+    <p class="conference_paragraph_text" data-tag="ona2017">This is for ONA conference</p>
+    <p class="conference_paragraph_text" data-tag="icfj">This is for ICFJ conference</p>
 
-    <div>
+    <div id="home_paragraph_text">
         <h1>ICFJ Knight Fellowships</h1>
         <h2>Tools and Projects</h2>
-        <p>The ICFJ Knight Fellows create a culture of news innovation and experimentation worldwide to deepen coverage, expand news delivery and engage citizens in the editorial process. Through that work, they launch web and mobile tools that transform journalism in their regions and spark new opportunities globally.</p>
-        <p>We've curated a list of ICFJ Knight tools that we think would offer great possibilities for journalists and technologists around the globe. If you adopt any of these tools, or lead any new projects inspired by them, tweet at us via @ICFJKnight. Our Fellows and the ICFJ Knight team are available to help you get started.</p>
+        <p style="text-align:left">The ICFJ Knight Fellows create a culture of news innovation and experimentation worldwide to deepen coverage, expand news delivery and engage citizens in the editorial process. Through that work, they launch web and mobile tools that transform journalism in their regions and spark new opportunities globally.</p>
+        <p style="text-align:left">We've curated a list of ICFJ Knight tools that we think would offer great possibilities for journalists and technologists around the globe. If you adopt any of these tools, or lead any new projects inspired by them, tweet at us via @ICFJKnight. Our Fellows and the ICFJ Knight team are available to help you get started.</p>
     </div>
-       
-    <div class="col-sm-4 card-holder dont-display-these">
+
+    <div class="col-sm-4 card-holder dont-display-these" data-tag="">
         <a href="to-quiz.html">
         <div class="tools-card">
             <div class="tools-card-image">
@@ -130,7 +146,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </a>
     </div>
 
-    <div class="col-sm-4 card-holder dont-display-these">
+    <div class="col-sm-4 card-holder dont-display-these" data-tag="">
         <a href="to-dotmat.html">
         <div class="tools-card">
             <div class="tools-card-image">
@@ -148,7 +164,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </a>
     </div>
 
-    <div class="col-sm-4 card-holder dont-display-these">
+    <div class="col-sm-4 card-holder dont-display-these" data-tag="">
         <a href="360_video_template.html">
         <div class="tools-card">
             <div class="tools-card-image">
@@ -169,7 +185,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- <div class="clearfix"></div> -->
 
 
-     <div class="col-sm-4 card-holder dont-display-these">
+     <div class="col-sm-4 card-holder dont-display-these" data-tag="">
         <a href="ANCIR.html">
         <div class="tools-card">
             <div class="tools-card-image">
@@ -189,7 +205,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
 
 
-    <div class="col-sm-4 card-holder dont-display-these">
+    <div class="col-sm-4 card-holder dont-display-these" data-tag="">
         <a href="aleph.html">
         <div class="tools-card">
             <div class="tools-card-image">
@@ -207,7 +223,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </a>
     </div>
 
-    <div class="col-sm-4 card-holder display-these">
+    <div class="col-sm-4 card-holder ona2017-card" data-tag="ona2017">
         <a href="briefcase.html">
         <div class="tools-card">
             <div class="tools-card-image">
@@ -229,7 +245,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- <div class="clearfix"></div> -->
 
 
-    <div class="col-sm-4 card-holder display-these">
+    <div class="col-sm-4 card-holder ona2017-card" data-tag="ona2017">
         <a href="digital_friday.html">
         <div class="tools-card">
             <div class="tools-card-image">
@@ -247,7 +263,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
 
 
-    <div class="col-sm-4 card-holder dont-display-these">
+    <div class="col-sm-4 card-holder icfj-card" data-tag="icfj">
         <a href="digital_security.html">
         <div class="tools-card">
             <div class="tools-card-image">
@@ -265,7 +281,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
 
 
-    <div class="col-sm-4 card-holder dont-display-these">
+    <div class="col-sm-4 card-holder icfj-card" data-tag="icfj">
         <a href="grano.html">
         <div class="tools-card">
             <div class="tools-card-image">
@@ -287,7 +303,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- <div class="clearfix"></div> -->
 
 
-    <div class="col-sm-4 card-holder dont-display-these">
+    <div class="col-sm-4 card-holder dont-display-these" data-tag="">
         <a href="360_video_newsroom.html">
         <div class="tools-card">
             <div class="tools-card-image">
@@ -305,7 +321,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
 
 
-    <div class="col-sm-4 card-holder dont-display-these">
+    <div class="col-sm-4 card-holder dont-display-these" data-tag="">
         <a href="hackdash.html">
         <div class="tools-card">
             <div class="tools-card-image">
@@ -322,8 +338,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </div>
         </a>
      </div>
-        
-    <div class="col-sm-4 card-holder dont-display-these">
+
+    <div class="col-sm-4 card-holder dont-display-these" data-tag="">
         <a href="healthxnews_handbook.html">
         <div class="tools-card">
             <div class="tools-card-image">
@@ -340,7 +356,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </a>
     </div>
 
-    <div class="col-sm-4 card-holder dont-display-these">
+    <div class="col-sm-4 card-holder dont-display-these" data-tag="">
         <a href="huru_map.html">
         <div class="tools-card">
             <div class="tools-card-image">
@@ -364,7 +380,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- <div class="clearfix"></div> -->
 
 
-    <div class="col-sm-4 card-holder dont-display-these">
+    <div class="col-sm-4 card-holder dont-display-these" data-tag="">
         <a href="narcoData.html">
         <div class="tools-card">
             <div class="tools-card-image">
@@ -383,7 +399,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
 
 
-    <div class="col-sm-4 card-holder dont-display-these">
+    <div class="col-sm-4 card-holder dont-display-these" data-tag="">
         <a href="push.html">
         <div class="tools-card">
             <div class="tools-card-image">
@@ -402,7 +418,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
 
 
-    <div class="col-sm-4 card-holder dont-display-these" data-category="B">
+    <div class="col-sm-4 card-holder dont-display-these" data-category="B" data-tag="">
         <a href="salama.html">
         <div class="tools-card">
             <div class="tools-card-image">
@@ -423,7 +439,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     <!-- <div class="clearfix"></div> -->
 
-    <div class="col-sm-4 card-holder dont-display-these">
+    <div class="col-sm-4 card-holder dont-display-these" data-tag="">
         <a href="sembramedia_directory.html">
         <div class="tools-card">
             <div class="tools-card-image">
@@ -438,9 +454,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             </div>
         </div>
         </a>
-    </div>    
-        
-    <div class="col-sm-4 card-holder dont-display-these" data-fellow="A">
+    </div>
+
+    <div class="col-sm-4 card-holder dont-display-these" data-fellow="A" data-tag="">
         <a href="spade.html">
         <div class="tools-card">
             <div class="tools-card-image">
@@ -458,7 +474,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </a>
     </div>
 
-    <div class="col-sm-4 card-holder dont-display-these" data-fellow="A" data-category="B">
+    <div class="col-sm-4 card-holder dont-display-these" data-fellow="A" data-category="B" data-tag="">
         <a href="tax_clock.html">
         <div class="tools-card">
             <div class="tools-card-image">
@@ -477,20 +493,21 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </a>
     </div>
  </div>
-    
- <div> 
-     <p>The Knight International Journalism Fellowships  program is funded by the John S. and James L. Knight Foundation. The Fellows build on past successes in the Knight program, which has a strong record of achieving impact. They work in countries where there is a good opportunity to create the news media of the future.</p>
-     <p>With additional support from the Bill & Melinda Gates Foundation, Knight Fellows are empowering journalists in sub-Saharan Africa and India to use the latest digital tools to tell compelling stories on health and development issues.</p>
-     <div>  
-         <img src="http://marylandreporter.com/wp-content/uploads/2014/02/kflogo-tag-3000px-1170x235.jpg" height="50" alt="Knight Foundation logo">
-         <img src="https://www.epiconline.org/wp-content/uploads/2016/03/Bill-Melinda-Gates-Foundation-Logo.svg_.png" height="50" alt="Gates Foundation logo">
-      </div>
-  </div>
 
-<script type="text/javascript" src="//pym.nprapps.org/pym.v1.min.js"></script>
-<script>
-    var pymParent = new pym.Parent('dotmat_demo', 'https://storage.googleapis.com/g2gcs-hosting-dotmat-8ddb06e014/index.html?sheet=https://docs.google.com/spreadsheets/d/1H28b3a-XhZH8Vjac6pJ9WM95yCBAdpVTCqN80KWpFZE/pubhtml', {})
-</script>
+ <div class="extra-info">
+   <div class="additional-text">
+       <p>The Knight International Journalism Fellowships  program is funded by the John S. and James L. Knight Foundation. The Fellows build on past successes in the Knight program, which has a strong record of achieving impact. They work in countries where there is a good opportunity to create the news media of the future.</p>
+       <p>With additional support from the Bill & Melinda Gates Foundation, Knight Fellows are empowering journalists in sub-Saharan Africa and India to use the latest digital tools to tell compelling stories on health and development issues.</p>
+       <div>
+           <img src="http://marylandreporter.com/wp-content/uploads/2014/02/kflogo-tag-3000px-1170x235.jpg" height="50" alt="Knight Foundation logo">
+           <img src="https://www.epiconline.org/wp-content/uploads/2016/03/Bill-Melinda-Gates-Foundation-Logo.svg_.png" height="50" alt="Gates Foundation logo">
+        </div>
+    </div>
+ </div>
+
+
+
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script src="bootstrap/js/bootstrap.min.js"></script>
 <script type="text/javascript">
@@ -550,24 +567,30 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   });
 
   //snippet for displaying the cards on filtering
-  let conference_name = 'ona2017';
   let url = window.location.href;
+  let tag = url.split("tag=");
+  let conference_name = tag[1];
   if(url.indexOf(conference_name) >= 0) {
       document.getElementById("back_button").style.display = 'block';
-      document.getElementById("conference_paragraph_text").style.display = 'block';
-      let displayThese = document.getElementsByClassName("display-these");
+      $( ".conference_paragraph_text[data-tag='"+conference_name+"']" )[0].style.display='block';
+      // document.getElementById("conference_paragraph_text").style.display = 'block';
+      document.getElementById('home_paragraph_text').style.display = 'none';
+      document.getElementById('conference-dropdown').style.display = 'none';
+      let imp_class = conference_name+"-card";
+      let displayThese = $( ".card-holder[data-tag='"+conference_name+"']" );
       for(let displayElement = 0; displayElement < displayThese.length; displayElement++) {
           displayThese[displayElement].style.display = 'block';
       }
-      let dontDisplayThese = document.getElementsByClassName("dont-display-these");
+      let dontDisplayThese = $(".card-holder[data-tag!='"+conference_name+"']");
       for(let dontDisplayElement = 0; dontDisplayElement < dontDisplayThese.length; dontDisplayElement++) {
           dontDisplayThese[dontDisplayElement].style.display = 'none';
       }
   }
   document.getElementById('back_button').addEventListener('click', function(){
-    location.reload(true)
-    window.location.replace('index.html')
-    // document.getElementById("back_button").href = 'http://localhost/tools.ijnet.org/index.html';
+    // location.reload(true)
+    // window.location.replace('index.html')
+    document.getElementById('conference-dropdown').style.display = 'block'
+    document.getElementById('home_paragraph_text').style.display = 'block';
   })
   //end of snippet for displaying the cards on filtering
 
