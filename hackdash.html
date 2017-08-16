@@ -186,8 +186,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         $root.animate({
             scrollTop: $(href).offset().top - 100
         }, 500, function () {
-            // window.location.hash = href;
-            history.pushState(null, null, href);
             $(document).on("scroll", onScroll);
         });
         return false;
@@ -226,7 +224,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             if (current_section_top <= (scroll_position  + 100) && (current_section_top + current_section.height() + 50) > (scroll_position + 100)) {
                 $('#side_list li.active-content').removeClass("active-content");
                 current_link.closest("li").addClass("active-content");
-                history.pushState(null, null, current_href);
             }
         });
         let scroll_diff = side_list_max_top - scroll_position;
