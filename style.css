@@ -78,6 +78,22 @@ body{
     margin-bottom: 30px;
 }
 
+#conference_paragraph_text h1{
+    color: #b75f18;
+    font-weight: 200;
+}
+
+#conference_paragraph_text h3{
+    font-weight: 200;
+    color: #656565;
+}
+
+#conference_paragraph_text p{
+    font-size: 16px !important;
+    line-height: 26px;
+    margin-bottom: 30px;
+}
+
 .additional-text p {
     font-size: 16px !important;
     line-height: 26px;
