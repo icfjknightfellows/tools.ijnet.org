@@ -720,7 +720,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     });
 </script>
 <script type="text/javascript">
-  $('document').ready($(function () {
+ $('document').ready($(function () {
   $("#fellow-select li").on("click", function() {
     var selected = $(this).text();
     var cards = document.querySelectorAll('.card-holder');
@@ -754,20 +754,34 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       let imp_class = conference_name+"-card";
       let str="";
       let str2=".card-holder";
+      let str3="";
+      let str4=".conference_paragraph_text";
       for(i in confarr){
           str+=".card-holder[data-tag*='"+confarr[i]+"'], ";
           str2+="[data-tag!='"+confarr[i]+"']";
+          str3+=".conference_paragraph_text[data-tag*='"+confarr[i]+"'], ";
+          str4+="[data-tag!='"+confarr[i]+"']";
       }
       str=str.slice(0,str.length-2);
-      console.log(str,str2);
+      str3=str3.slice(0,str3.length-2);
+      console.log(str3,str4);
       let displayThese = $(str);
       let dontDisplayThese = $(str2);
+      let displayThesePara = $(str3);
+      let dontDisplayThesePara = $(str4);
       for(let dontDisplayElement = 0; dontDisplayElement < dontDisplayThese.length; dontDisplayElement++) {
           dontDisplayThese[dontDisplayElement].style.display = 'none';
+      }
+      for(let dontDisplayElement = 0; dontDisplayElement < dontDisplayThesePara.length; dontDisplayElement++){
+          dontDisplayThesePara[dontDisplayElement].style.display = 'none';
       }
       for(let displayElement = 0; displayElement < displayThese.length; displayElement++) {
           displayThese[displayElement].style.display = 'block';
       }
+      for(let displayElement = 0; displayElement < displayThese.length; displayElement++) {
+        displayThesePara[displayElement].style.display = 'block';     
+      }     
+
   }
   document.getElementById('back_button').addEventListener('click', function(){
     // location.reload(true)
