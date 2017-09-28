@@ -8,7 +8,7 @@
     'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
     })(window,document,'script','dataLayer','GTM-M3FCKN6');</script>
     <!-- End Google Tag Manager -->
-    <title> Tax Clock</title>
+    <title> Digital Fridays</title>
     <meta charset='utf-8'/>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
@@ -44,7 +44,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 </nav>
 <div class="container">
     <div id="side_list" class="side-list">
-        <ul class="list-unstyled content-list">
+         <ul class="list-unstyled content-list">
+            <br>
             <li class="section-title">CONTENT</li>
             <li class="content-list-li active-content"><a href="#introduction" title=""> Introduction </a></li>
             <li class="content-list-li"><a href="#contributors" title=""> Contributors </a></li>
@@ -92,20 +93,15 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </div>
     </a>
     <div class="page-header">
-        <div class="page-title">Tax Clock</div>
+        <div class="page-title">Medicine Prices</div>
         <div class="small-divider"></div>
-        <div class="one-liner">Helps citizens understand how governments spend their tax dollars.</div>
+        <div class="one-liner">Guide for setting up weekly training sessions to get your newsroom started on the latest digital tools.  </div>
     </div>
 
     <div id="introduction">
         <div class="article-container">
             <div class="section-title">Introduction</div>
-            <p>TaxClock helps citizens to understand how much time they spend working to pay their taxes each day. It provides a minute-by-minute breakdown of which departments and services your workday is funding. The tool also shows how much time you spend "working for yourself," meaning earning money to save or use for personal expenses.
-
-            Tax Day by Fred Chasen and by Tax Schedule by Code for South Africa inspired this project.
-
-            The site is an africanSPENDING project of Code for Kenya as part of the wider ​Code for Africa organization. The data that powers the tool is available on ​openAFRICA​.
-            </p>
+            <p>TEXT here</p>
         </div>
         <div class="clearfix section-spacing"></div>
         <div class="article-container">
@@ -113,11 +109,16 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 <tbody>
                     <tr>
                         <th scope="row">Link</th>
-                        <td><a href="https://taxclock.codeforkenya.org/" target="blank">https://taxclock.codeforkenya.org/</a></td>
+                        <td><a href="https://mpr.code4sa.org/" target="_blank">Medicine Price Registry</a></td>
                     </tr>
                     <tr>
-                        <th scope="row">Github</th>
-                        <td><a href="https://github.com/CodeForAfrica/TaxClock.Kenya" target="blank">https://github.com/CodeForAfrica/TaxClock.Kenya</a>  </td>
+                        <th scope="row">Story About the Tool</th>
+                        <td>
+                            <ul>
+                                <li><a href="http://code4sa.org/2013/10/15/comparing-medicine-prices.html">"How much should you be paying for your medcines</a></li>
+                                <li><a href="https://medium.com/civictech/editorial-liberate-then-let-users-lead-79150f911957">"Liberate: then let users lead"</a></li>
+                            </ul>
+                        </td>
                     </tr>
                 </tbody>
             </table>
@@ -134,46 +135,20 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                         <div class="to-card-content">
                             <div class="date-line">Fellow (Strategist)</div>
                             <div class="to-card-caption">
-                                <div class="profile-img"><img src="src/img/tools_img/david_lemayian.jpg" width="100%"></div>
+                               <div class="profile-img"><img src="src/img/tools_img/nasur.jpg" width="100%"></div>
                                 <div class="profile-details">
-                                    <div class="name"><a href="http://www.icfj.org/about/profiles/david-lemayian" target="blank">David Lemayian</a></div>
-                                    <div class="detail">ICFJ Knight Fellow.</div>
+                                    <div class="name"><a href="http://www.icfj.org/about/profiles/nasrhadi" target="blank">Nasr ul Hadi</a></div>
+                                    <div class="detail">ICFJ Knight Fellow</div>
                                 </div>
                             </div>
-                            <div class="to-card-caption">
-                                 <div class="profile-img"><img src="src/img/tools_img/catherine.jpg" width="100%"></div>
-                                <div class="profile-details">
-                                    <div class="name"><a href="http://www.icfj.org/about/profiles/catherine-gicheru" target="blank">Catherine Gicheru</a></div>
-                                    <div class="detail">ICFJ Knight Fellow.</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="gallary-view">
-                <div class="col-sm-6">
-                    <div class="to-card">
-                            <div class="to-card-content">
-                                <div class="date-line">Developed By</div>
-                                <div class="to-card-caption">
-                                     <div class="profile-img"><img src="src/img/tools_img/code_africa.png" width="100%"></div>
-                                    <div class="profile-details">
-                                        <div class="name"><a href="https://codeforafrica.org/" target="blank">Code for Africa</a></div>
 
-                                    </div>
-                                </div>
-                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 </div>
-<script type="text/javascript" src="//pym.nprapps.org/pym.v1.min.js"></script>
-<script>
-var pymParent = new pym.Parent('quiz_demo', 'https://storage.googleapis.com/g2gcs-hosting-quizjs-v2-148d020fd5/index.html?sheet=https://docs.google.com/spreadsheets/d/1XHWYwmqTWkEGri001nzMMpx96Vegzwb7J6hQrC5XKZY/pubhtml', {});
-</script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script src="bootstrap/js/bootstrap.min.js"></script>
 <script type="text/javascript">

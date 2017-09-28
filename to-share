@@ -48,8 +48,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <li class="section-title">CONTENT</li>
             <li class="content-list-li active-content"><a href="#introduction" title=""> Introduction </a></li>
             <li class="content-list-li"><a href="#contributors" title=""> Contributors </a></li>
-            <br>
-            <li><img src="src/img/watermark.jpg" alt="ICFJ" width="100px"></li>
         </ul>
     </div>
     <div class="container-header">
@@ -92,19 +90,15 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </div>
     </a>
     <div class="page-header">
-        <div class="page-title">Tax Clock</div>
+        <div class="page-title">toShare</div>
         <div class="small-divider"></div>
-        <div class="one-liner">Helps citizens understand how governments spend their tax dollars.</div>
+        <div class="one-liner">Create branded image cards for social media that help to add context to stories.</div>
     </div>
 
     <div id="introduction">
         <div class="article-container">
             <div class="section-title">Introduction</div>
-            <p>TaxClock helps citizens to understand how much time they spend working to pay their taxes each day. It provides a minute-by-minute breakdown of which departments and services your workday is funding. The tool also shows how much time you spend "working for yourself," meaning earning money to save or use for personal expenses.
-
-            Tax Day by Fred Chasen and by Tax Schedule by Code for South Africa inspired this project.
-
-            The site is an africanSPENDING project of Code for Kenya as part of the wider ​Code for Africa organization. The data that powers the tool is available on ​openAFRICA​.
+            <p>Text here
             </p>
         </div>
         <div class="clearfix section-spacing"></div>
@@ -112,12 +106,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <table class="table table-condensed">
                 <tbody>
                     <tr>
-                        <th scope="row">Link</th>
-                        <td><a href="https://taxclock.codeforkenya.org/" target="blank">https://taxclock.codeforkenya.org/</a></td>
-                    </tr>
-                    <tr>
                         <th scope="row">Github</th>
-                        <td><a href="https://github.com/CodeForAfrica/TaxClock.Kenya" target="blank">https://github.com/CodeForAfrica/TaxClock.Kenya</a>  </td>
+                        <td><a href="https://github.com/icfjknightfellows/ProtoGraph.Card.toSocial" target="blank">https://github.com/icfjknightfellows/ProtoGraph.Card.toSocial</a>  </td>
                     </tr>
                 </tbody>
             </table>
@@ -134,17 +124,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                         <div class="to-card-content">
                             <div class="date-line">Fellow (Strategist)</div>
                             <div class="to-card-caption">
-                                <div class="profile-img"><img src="src/img/tools_img/david_lemayian.jpg" width="100%"></div>
+                                <div class="profile-img"><img src="src/img/irshad.jpg" width="100%"></div>
                                 <div class="profile-details">
-                                    <div class="name"><a href="http://www.icfj.org/about/profiles/david-lemayian" target="blank">David Lemayian</a></div>
-                                    <div class="detail">ICFJ Knight Fellow.</div>
-                                </div>
-                            </div>
-                            <div class="to-card-caption">
-                                 <div class="profile-img"><img src="src/img/tools_img/catherine.jpg" width="100%"></div>
-                                <div class="profile-details">
-                                    <div class="name"><a href="http://www.icfj.org/about/profiles/catherine-gicheru" target="blank">Catherine Gicheru</a></div>
-                                    <div class="detail">ICFJ Knight Fellow.</div>
+                                    <div class="name"><a href="https://www.icfj.org/about/profiles/irshad-daftari" target="blank">Irshad Daftari</a></div>
+                                    <div class="detail">ICFJ Knight Fellow</div>
                                 </div>
                             </div>
                         </div>
@@ -157,9 +140,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                             <div class="to-card-content">
                                 <div class="date-line">Developed By</div>
                                 <div class="to-card-caption">
-                                     <div class="profile-img"><img src="src/img/tools_img/code_africa.png" width="100%"></div>
+                                     <div class="profile-img"><img src="src/img/pykih_logo.png" width="100%"></div>
                                     <div class="profile-details">
-                                        <div class="name"><a href="https://codeforafrica.org/" target="blank">Code for Africa</a></div>
+                                        <div class="name"><a href="https://pykih.com/" target="blank">Pykih</a></div>
 
                                     </div>
                                 </div>
