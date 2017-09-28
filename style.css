@@ -79,7 +79,12 @@ body{
 }
 
 #conference_paragraph_text h1{
-    color: #b75f18;
+    color: #405664;
+    font-weight: 200;
+}
+
+#conference_paragraph_text h2{
+    color: #405664;
     font-weight: 200;
 }
 
