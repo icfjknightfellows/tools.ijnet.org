@@ -81,21 +81,27 @@ body{
 #conference_paragraph_text h1{
     color: #405664;
     font-weight: 200;
+    text-align:center;
+    font-family:'Droid Serif', serif;
 }
 
 #conference_paragraph_text h2{
     color: #405664;
     font-weight: 200;
+    text-align:center;
 }
 
 #conference_paragraph_text h3{
     font-weight: 200;
     color: #656565;
+    text-align:center;
 }
 
 #home_paragraph_text h4{
     font-weight: 100;
     color: #656565;
+    text-align:center;
+    font-family: helvetica;
 }
 
 #conference_paragraph_text p{
