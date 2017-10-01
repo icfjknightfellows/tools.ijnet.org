@@ -71,7 +71,7 @@ body{
 
 #home_paragraph_text h4{
     font-weight: 100;
-    color: #656565;
+    color: #4b4b4b;
     font-family: helvetica;
     text-align: center;
 }
@@ -80,6 +80,7 @@ body{
     font-size: 16px !important;
     line-height: 26px;
     margin-bottom: 30px;
+    padding:15px;
 }
 
 #conference_paragraph_text h1{
@@ -97,13 +98,13 @@ body{
 
 #conference_paragraph_text h3{
     font-weight: 200;
-    color: #656565;
+    color: #4b4b4b;
     text-align:center;
 }
 
 #home_paragraph_text h4{
     font-weight: 100;
-    color: #656565;
+    color: #4b4b4b;
     text-align:center;
     font-family: helvetica;
 }
@@ -112,6 +113,7 @@ body{
     font-size: 16px !important;
     line-height: 26px;
     margin-bottom: 30px;
+    padding:15px;
 }
 
 .additional-text p {
@@ -186,7 +188,6 @@ p{
     color: #333;
     font-family: 'Droid Serif', serif;
     font-weight: lighter;
-    padding:15px;
 }
 
 .section-spacing{
