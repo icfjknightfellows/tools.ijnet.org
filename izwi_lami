@@ -155,7 +155,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                             <div class="to-card-caption">
                                  <div class="profile-img"><img src="src/img/healthe.jpg" width="100%"></div>
                                 <div class="profile-details">
-                                    <div class="name"><a href="https://www.health-e.org.za/g" target="blank">Health-e News</a></div>
+                                    <div class="name"><a href="https://www.health-e.org.za/" target="blank">Health-e News</a></div>
+                                </div>
+                            </div>
+                            <div class="to-card-caption">
+                                 <div class="profile-img"><img src="src/img/tools_img/code_africa.png" width="100%"></div>
+                                <div class="profile-details">
+                                    <div class="name"><a href="https://codeforafrica.org/" target="blank">Code for Africa</a></div>
                                 </div>
                             </div>
                         </div>
