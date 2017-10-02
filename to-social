@@ -90,7 +90,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </div>
     </a>
     <div class="page-header">
-        <div class="page-title">toShare</div>
+        <div class="page-title">toSocial</div>
         <div class="small-divider"></div>
         <div class="one-liner">Create branded image cards for social media that help to add context to stories.</div>
     </div>
@@ -98,13 +98,17 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <div id="introduction">
         <div class="article-container">
             <div class="section-title">Introduction</div>
-            <p>Text here
+            <p>toSocial prepares Facebook, Twitter thumbnails for an article by staming article cover image with your logo. This helps potential readers sort out links from generic news websites and click through only on those they’re genuinely interested in.
             </p>
         </div>
         <div class="clearfix section-spacing"></div>
         <div class="article-container">
             <table class="table table-condensed">
                 <tbody>
+                    <tr>
+                        <th scope="row">Link</th>
+                        <td><a href="https://protograph.pykih.com/prepare-articles" target="blank">https://protograph.pykih.com/prepare-articles</a></td>
+                    </tr>
                     <tr>
                         <th scope="row">Github</th>
                         <td><a href="https://github.com/icfjknightfellows/ProtoGraph.Card.toSocial" target="blank">https://github.com/icfjknightfellows/ProtoGraph.Card.toSocial</a>  </td>
@@ -127,6 +131,16 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                                 <div class="profile-img"><img src="src/img/irshad.jpg" width="100%"></div>
                                 <div class="profile-details">
                                     <div class="name"><a href="https://www.icfj.org/about/profiles/irshad-daftari" target="blank">Irshad Daftari</a></div>
+                                    <div class="detail">ICFJ Knight Fellow</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="to-card-content">
+                            <div class="date-line">Fellow (Strategist)</div>
+                            <div class="to-card-caption">
+                                <div class="profile-img"><img src="src/img/tools_img/ritvvij.png" width="100%"></div>
+                                <div class="profile-details">
+                                    <div class="name"><a href="https://www.icfj.org/about/profiles/ritvvij-parrikh" target="blank">Ritvvij Parrikh</a></div>
                                     <div class="detail">ICFJ Knight Fellow</div>
                                 </div>
                             </div>
