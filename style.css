@@ -114,7 +114,8 @@ body{
     font-size: 16px !important;
     line-height: 26px;
     margin-bottom: 30px;
-    padding:15px;
+    padding-left:15px;
+    padding-right:15px;
 }
 
 .additional-text p {
@@ -169,7 +170,7 @@ body{
     font-weight: 100;
     text-transform: uppercase;
     letter-spacing: 1px;
-    color: #999;
+    color: #4b4b4b;
     margin-bottom: 15px;
 }
 
@@ -179,7 +180,7 @@ body{
     font-weight: 100;
     text-transform: uppercase;
     letter-spacing: 1px;
-    color: #999;
+    color: #4b4b4b;
     margin-bottom: 15px;
 }
 
@@ -262,7 +263,7 @@ p{
     font-family: helvetica, arial;
     font-weight: 100;
     text-transform: uppercase;
-    color: #999;
+    color: #4b4b4b;
     margin-bottom: 15px;
     margin-top: 10px;
 }
@@ -462,7 +463,7 @@ a, a:hover{
 .category-title{
     text-transform: uppercase;
     font-size: 11px;
-    color: #999;
+    color: #4b4b4b;
     margin-top: 10px;
 }
 
@@ -481,7 +482,7 @@ a, a:hover{
 
 .detail{
     font-size: 12px;
-    color: #999;
+    color: #4b4b4b;
 }
 
 .profile-img{
@@ -530,7 +531,7 @@ a, a:hover{
 }
 
 .content-list li a{
-    color: #999;
+    color: #4b4b4b;
     font-weight: 100;
     font-size: 14px;
 }
@@ -570,7 +571,7 @@ a, a:hover{
     padding: 7px 15px;
     display: inline-block;
     font-size: 12px;
-    color :#999;
+    color:#4b4b4b;
     transition: all 250ms cubic-bezier(.02, .01, .47, 1);
     cursor: pointer;
     font-family: helvetica, arial;
