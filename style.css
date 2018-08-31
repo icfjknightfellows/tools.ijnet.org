@@ -69,6 +69,15 @@ body{
     text-align:center;
     font-family:'Overpass';
     letter-spacing: 2px;
+    font-weight: 900;
+}
+
+#home_paragraph_text h2{
+    color: #b75f18;
+    font-weight: 200;
+    text-align:center;
+    font-family:'Overpass';
+    letter-spacing: 2px;
 }
 
 #home_paragraph_text h4{
@@ -94,6 +103,7 @@ body{
     margin-top:18px;
     margin-bottom:18px;
     letter-spacing: 2px;
+    font-weight: 900;
 }
 
 .conference_paragraph_text h2{
