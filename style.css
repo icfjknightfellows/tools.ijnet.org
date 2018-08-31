@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Droid+Serif:400,400i,700,700i');
+@import url('https://fonts.googleapis.com/css?family=Overpass');
 
 body{
     font-size: 16px;
@@ -66,7 +67,7 @@ body{
     color: #b75f18;
     font-weight: 200;
     text-align:center;
-    font-family:'Droid Serif', serif;
+    font-family:'Overpass';
 }
 
 #home_paragraph_text h4{
@@ -88,7 +89,7 @@ body{
     color: #b75f18;
     font-weight: 200;
     text-align:center;
-    font-family:'Droid Serif', serif;
+    font-family:'Overpass';
     margin-top:18px;
     margin-bottom:18px;
 }
