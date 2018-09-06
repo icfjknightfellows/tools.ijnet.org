@@ -714,6 +714,91 @@ a, a:hover{
     margin-left: -10px;
 }
 
+#examples .example-slide{
+    width: 100%;
+    overflow-x: scroll;
+    background: #fafafa;
+    min-height: 100px;
+    display: inline-block;
+    box-sizing: border-box;
+    padding: 15px 20px;
+    border: 1px solid #fafafa;
+}
+
+.examples-scroll-area{
+    width: 1600px;
+    min-height: 100px;
+    display: inline-block;
+}
+
+.example-links{
+    margin-right: 20px;
+    float: left;
+}
+
+.example-card{
+    background: white;
+    height: 350px;
+    display: inline-block;
+    float: left;
+    position: relative;
+    width: 250px;
+    border-radius: 4px;
+    overflow: hidden;
+    transition: 0.2s ease-in-out;
+    box-shadow: 0px 2px 5px lightgrey;
+}
+
+.example-card:last-child{
+    margin-right: 0px;
+}
+
+.project-image{
+    width: 250px;
+    height: 150px;
+    background: #efefef;
+    margin-bottom: 16px;
+}
+
+.project-name{
+    font-size: 16px;
+    font-family:'Droid Serif', serif;
+    margin-bottom: 8px;
+    padding: 0px 15px;
+    font-weight: bold;
+    color: #333;
+}
+
+.project-one-liner{
+    font-size: 14px;
+    line-height: 22px;
+    font-family:'Droid Serif', serif;
+    margin-bottom: 24px;
+    padding: 0px 15px;
+    color: #333;
+}
+
+.publisher-logo{
+    text-align: right;
+    padding: 0px 15px;
+    margin-bottom: 16px;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+}
+
+.example-links:last-child{
+    margin-right: 0px;
+}
+
+.example-card:hover{
+    box-shadow: 0px 10px 25px lightgrey;
+}
+
+.example-card:hover .project-name{
+    text-decoration: underline;
+}
+
 @media only screen
 and (min-device-width : 320px)
 and (max-device-width : 736px) {
