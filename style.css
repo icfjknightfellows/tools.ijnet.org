@@ -799,6 +799,12 @@ a, a:hover{
     text-decoration: underline;
 }
 
+#demo img{
+    box-shadow: 0 10px 15px rgba(0,0,0,.16);
+    border-radius: 4px;
+    border: 1px solid #efefef;
+}
+
 @media only screen
 and (min-device-width : 320px)
 and (max-device-width : 736px) {
