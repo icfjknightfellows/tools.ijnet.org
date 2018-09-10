@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css?family=Droid+Serif:400,400i,700,700i');
 @import url('https://fonts.googleapis.com/css?family=Overpass');
+@font-face {
+    font-family: Interstate-BlackCondensed;
+    src: url("/Interstate-BlackCondensed.otf") format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
 
 body{
     font-size: 16px;
@@ -67,7 +73,7 @@ body{
     color: #b75f18;
     font-weight: 200;
     text-align:center;
-    font-family:'Overpass';
+    font-family:'Interstate-BlackCondensed';
     letter-spacing: 2px;
     font-weight: 900;
 }
