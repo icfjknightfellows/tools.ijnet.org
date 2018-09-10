@@ -16,8 +16,9 @@ ul.navbar-nav, .navbar-nav li a {
     text-transform: uppercase;
 }
 #logo {
-    padding: 18px 0px 21px 3px;
+    padding: 5px 0px 5px 3px;
     text-align: left !important;
+    background: #f6f6f9;
 }
 .container-navbar {
     background: url("https://ijnet.org/sites/all/themes/ijnet/images/bg_main_menu.png") repeat 0 0;
