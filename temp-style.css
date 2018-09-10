@@ -1,9 +1,11 @@
 .main-navbar {
     background: #ffffff;
     /*border-bottom: 1px solid #3b3923;*/
+    border-style: none;
 }
 .navbar-header {
     padding: 5px 0px;
+    border-style: none;
 }
 .container-fluid {
     max-width: 990px;
