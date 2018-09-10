@@ -75,7 +75,6 @@ body{
     color: #000000;
     text-align:center;
     font-family:'Playfair Display';
-    letter-spacing: 3px;
     font-weight: 900;
 }
 
@@ -84,7 +83,6 @@ body{
     font-weight: 700;
     text-align:center;
     font-family:'PT Sans Narrow';
-    letter-spacing: 3px;
 }
 
 #home_paragraph_text h4{
