@@ -27,6 +27,7 @@ ul.navbar-nav, .navbar-nav li a {
     height: 70px;
     margin-bottom: 0px;
     border-radius: 0px;
+    background: #f6f6f9;
 }
 .side-list {
     display: none;
