@@ -78,11 +78,11 @@ body{
 }
 
 #home_paragraph_text h2{
-    color: #b75f18;
+    color: #000000;
     font-weight: 200;
     text-align:center;
-    font-family:'Overpass';
-    letter-spacing: 2px;
+    font-family:'Interstate-BlackCondensed';
+    letter-spacing: 3px;
 }
 
 #home_paragraph_text h4{
