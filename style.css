@@ -1,11 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Droid+Serif:400,400i,700,700i');
-@import url('https://fonts.googleapis.com/css?family=Overpass');
 @import url('https://fonts.googleapis.com/css?family=Playfair+Display:900')
-@font-face {
-    font-family: Interstate-BlackCondensed;
-    src: url("/Interstate-BlackCondensed.otf") format('truetype');
-    font-weight: bold;
-    font-style: normal;
+@import url('https://fonts.googleapis.com/css?family=PT+Sans+Narrow:700')
+    
 }
 @font-face {
     font-family: Interstate-LightCondensed;
@@ -85,9 +81,9 @@ body{
 
 #home_paragraph_text h2{
     color: #000000;
-    font-weight: 200;
+    font-weight: 700;
     text-align:center;
-    font-family:'Interstate-LightCondensed';
+    font-family:'PT Sans Narrow';
     letter-spacing: 3px;
 }
 
