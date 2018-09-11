@@ -143,7 +143,7 @@ body{
 .additional-text p {
     font-size: 16px !important;
     line-height: 26px;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
 }
 
 .footer-logos{
@@ -160,7 +160,7 @@ body{
 .page-header{
     text-align: center;
     border:0px;
-    margin-bottom: 50px;
+    margin-bottom: 40px;
 }
 
 .page-title{
