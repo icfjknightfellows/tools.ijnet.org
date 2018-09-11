@@ -302,6 +302,8 @@ a, a:hover{
 
 .tools-card-title p{
     font-size: 22px !important;
+    font-family: PT Sans Narrow;
+    font-weight: 700;
 }
 
 .tools-card{
