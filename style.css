@@ -74,9 +74,9 @@ body{
 
 #home_paragraph_text h2{
     color: #000000;
-    font-weight: 200;
+    font-weight: 300;
     text-align:center;
-    font-family:'PT Sans Narrow';
+    font-family:'Lato';
 }
 
 #home_paragraph_text h4{
