@@ -1,13 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Droid+Serif:400,400i,700,700i');
 @import url('https://fonts.googleapis.com/css?family=Playfair+Display:900');
-@import url('https://fonts.googleapis.com/css?family=PT+Sans+Narrow:700')
-    
-}
-@font-face {
-    font-family: Interstate-LightCondensed;
-    src: url("/Interstate-LightCondensed.otf") format('truetype');
-    font-style: normal;
-}
+@import url('https://fonts.googleapis.com/css?family=PT+Sans+Narrow:700');
+@import url('https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i')
 
 body{
     font-size: 16px;
@@ -208,8 +202,8 @@ p{
     font-size: 18px !important;
     line-height: 32px;
     color: #333;
-    font-family: 'Droid Serif', serif;
-    font-weight: lighter;
+    font-family: 'Lato';
+    font-weight: 400;
 }
 
 .section-spacing{
